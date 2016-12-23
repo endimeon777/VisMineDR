@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+ </head>
+  <body>
+  <table border="0" width="90%">
+    <tr>
+      <td align="center"><img src="images/help/tariykdd.gif"/></td>
+    </tr>
+    <tr>
+      <td>
+      <h1 style=" color:red;">Visor WEKA Tree</h1>
+      </td>
+    </tr>
+    <tr>
+      <td align="justify">Este tipo de visor, permite generar un arbol grafico de desicion apartir de un proceso minero de Clasificacion.<br><br>
+La conexion con otros componentes drag and drop, es similar en todos los visores, y se realiza como se muestra a continuacion.<br><br></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="images/help/weka01.png" style="width:400px; height:350px"/></td>
+    </tr>
+    <tr>
+      <TD align="justify">
+      <br>
+        Al liberar el icono en el &aacute;rea de trabajo A es posible conectar los iconos por medio de un hilo. Al hacer click derecho sobre el icono aparece un menu emergente, el cual consta de las siguientes opciones:<br>
+          <ul>
+          <li>La opci&oacute;n Delete, borra el algoritmo del area de trabajo.</li>
+          <li>La opci&oacute;n Configure, adapta los par&aacute;metros del algoritmo a las necesidades del analista.</li>
+          <li>La opci&oacute;n Run ejecuta la aplicaci&oacute;n del algoritmo.</li>
+          <li>La opcion View despliega la ventana que permite visualizar tanto el arbol como  las reglas generadas. Sus detalles se explican a continuacion.</li>
+          </ul>
+          Visualizacion del arbol grafico:<br><br>
+      </td>
+    </tr>
+    <tr>
+      <td align="center"><img src="images/help/weka02.png" style="width:400px; height:350px"/></td>
+    </tr>
+    <tr>
+      <td align="justify"><br>Se muestra el arbol Weka.<br>
+A area del arbol.<br>
+B pesta&ntilde;a para ver las reglas generadas a partir del arbol.<br>
+G porcentaje de error del arbol.<br><br>
+Tambien se puede desplegar el menu para ajustes del arbol. Las opciones son:<br><br>
+C &quot;Center on Top Node&quot; el cual mueve el nodo raiz al centro de la pantalla y al arbol consigo.<br>
+D &quot;Fit to Screen&quot; el cual ajusta el arbol al tama&ntilde;o de la ventana.<br>
+E &quot;Auto Scale&quot; el cual despliega el arbol en su totalidad sin importar que sobrepase el tama&ntilde;o de la ventana.<br>
+F &quot;Select Font&quot; que permite seleccionar el tama&ntilde;o de la fuente usada.<br><br>
+Visualizacion de Reglas:<br><br></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="images/help/hierarchical04.png" style="width:400px; height:350px"/></td>
+    </tr>
+    <tr>
+      <td align="justify"><br>Las reglas generadas a partir del arbol son mostradas. Esta lista puede ser ordenada de acuerdo a la columna. La lista se ordena de mayor a menor o viceversa teniendo como criterio dicha columna.
+      </td>
+    </tr>
+  </table>
+  </body>
+</html>

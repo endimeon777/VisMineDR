@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title></title>
+</head>
+
+
+<body>
+
+<div style="text-align: center;"><img src="images/help/tariykdd.gif"><br>
+
+</div>
+
+<div style="text-align: justify;"><br>
+
+</div>
+
+<h1 style="color: red; text-align: justify;">Plane Text Files Conection</h1>
+
+<div style="text-align: justify;">The connection through text file, is
+made with&nbsp;.arff, or .csv extension. For example, .arff&nbsp;must
+contain the titles of&nbsp;&nbsp; attributes and the values of such.
+Example of a file .arff &nbsp;<br>
+<t ÿ="" aliÿÿÿÿcent=""></t><br>
+
+<t ÿ="" aliÿÿÿÿcent="">
+</t></div>
+
+<div style="border: medium solid ; width: 350px; text-align: left;">@attribute State {Sunny, Overcast, Rainy, Dry} <br>
+@attribute Temperature {Hot, Tempering, Cool}&nbsp; <br>
+@attribute Humidity {High, Normal}&nbsp; <br>
+@attribute Wind { Weak, Strong wind } <br>
+@attribute jtennis {yes, no} <br>
+@data<br>
+Sunny, Hot, High, Weak, No<br>
+Sunny, Hot, High, Strong,No<br>
+Overcast, Hot, High, Weak, yes<br>
+Rainy, Tempering, High, Weak, yes<br>
+Rainy, Cool, Normal, Weak, yes<br>
+Rainy, Cool, Normal, Strong, No&nbsp; <br>
+
+
+</div>
+
+<div style="text-align: justify;">
+<br>
+Connection with other drag and drop components is similar&nbsp;&nbsp; in the connection modules, and it is made as follows.<br>
+<br>
+
+
+    
+    
+      
+<div style="text-align: center;"><img src="images/help/file01.png" style="width: 400px; height: 350px;">
+    
+    
+      
+      <br>
+<br>
+<div style="text-align: left;">When releasing the icon in the work area
+A. is possible to connect the icons&nbsp; by means of a
+thread.&nbsp;&nbsp; When doing right click on the icon appears an
+emergent menu,&nbsp; which consists of the following options :&nbsp; <br>
+<br>
+Delete option, deletes the algorithm icon from the work area.<br>
+Option: Open, setup parameters of connection according to the necessities&nbsp; of the analyst <br>
+Option Load executes the connection.&nbsp;&nbsp; <br>
+<br>
+&nbsp;The configuration of the Open option of the connection is setup&nbsp; as follows:<br>
+</div>
+
+</div>
+</div>
+<div style="text-align: justify;"><br>
+
+
+      
+    
+    
+      
+<div style="text-align: center;"><img src="images/help/file02.png" style="width: 400px; height: 350px;">
+    
+    
+      
+      <br>
+
+</div>
+
+<br>
+Appears the visualization window for data loaded from a text file. Which is composed by:&nbsp; <br>
+<br>
+A Browse button that allows navigation in the file system.&nbsp; <br>
+B grill in which&nbsp; will be shown the loaded data.&nbsp; <br>
+C Options for Marquet Basket or Multivaluled files that users&nbsp; can select according to the case.<br>
+D the buttons to accept or&nbsp; cancel the operation.&nbsp; <br>
+<br>
+To load the file, we accede to the Load option from the contextual menu.<br>
+</div>
+<div style="text-align: justify;"><br>
+
+
+      
+    
+    
+      
+<div style="text-align: center;"><img src="images/help/file03.png" style="width: 400px; height: 350px;">
+    
+  
+  </div>
+
+</div>
+
+</body>
+</html>

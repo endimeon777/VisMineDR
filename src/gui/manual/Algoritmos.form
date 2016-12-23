@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <Properties>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+    </Property>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="250" max="-2" attributes="0"/>
+                      <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel18" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextArea2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="341" max="-2" attributes="0"/>
+                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jLabel19" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel20" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jTextArea1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="316" max="-2" attributes="0"/>
+                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jTextArea3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jTextArea4" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="338" max="-2" attributes="0"/>
+                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jTextArea5" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel21" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="247" max="-2" attributes="0"/>
+                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jTextArea6" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="198" max="-2" attributes="0"/>
+                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jTextArea7" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="2004" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel17" min="-2" pref="27" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+              <Component id="jTextArea1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+              <Component id="jLabel18" min="-2" pref="27" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+              <Component id="jTextArea2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+              <Component id="jLabel19" min="-2" pref="27" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+              <Component id="jTextArea3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+              <Component id="jLabel20" min="-2" pref="27" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+              <Component id="jTextArea4" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
+              <Component id="jLabel21" min="-2" pref="27" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jTextArea5" min="-2" pref="51" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+              <Component id="jTextArea6" min="-2" pref="51" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+              <Component id="jTextArea7" min="-2" pref="51" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="105" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel17">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB Demi" size="18" style="0"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="fc" green="7b" red="3a" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Algoritmos de Clasificaci&#xf3;n"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextArea" name="jTextArea1">
+      <Properties>
+        <Property name="columns" type="int" value="20"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB Demi" size="14" style="0"/>
+        </Property>
+        <Property name="rows" type="int" value="5"/>
+        <Property name="text" type="java.lang.String" value="Clasificaci&#xf3;n: se asigna los registros de datos en categor&#xed;as predefinidas. Los datos son objetos caracterizados &#xa;por atributos que pertenecen a diferentes clases. La meta es inducir un modelo para poder predecir una clase &#xa;dados los valores de los atributos. Se utiliza &#xc1;rboles de decisi&#xf3;n que son  estructuras de forma de &#xe1;rbol que &#xa;representan conjuntos de decisiones. Estas decisiones generan reglas para la clasificaci&#xf3;n de un conjunto de &#xa;datos.&#xa;En esta herramienta se han implementado 3 tipos de algoritmos que son los suiguientes:&#xa;"/>
+        <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel18">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB Demi" size="18" style="0"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="fc" green="7b" red="3a" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Mate Tree"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextArea" name="jTextArea2">
+      <Properties>
+        <Property name="columns" type="int" value="20"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB Demi" size="14" style="0"/>
+        </Property>
+        <Property name="rows" type="int" value="5"/>
+        <Property name="text" type="java.lang.String" value="Mate-tree es un algoritmo propuesto por Timar&#xe1;n, se basa en los nuevos operadores del &#xe1;lgebra relacional Mate, &#xa;Describe Classifier, y las funciones agregadas Entro( ) y Gain( ) para la generaci&#xf3;n de reglas de clasificaci&#xf3;n &#xa;propuestos por tambien por Timar&#xe1;n. El algoritmo es el siguiente .&#xa;&#xa;El primer paso del algoritmo calcula la Entrop&#xed;a del atributo clase de la relaci&#xf3;n R. En el subsiguiente paso, se aplica &#xa;el operador Mate con el fin de generar todas las posibles combinaciones de los atributos condici&#xf3;n con el atributo clase. &#xa;&#xa;Se cuenta el n&#xfa;mero de ocurrencias de cada combinaci&#xf3;n y a la relaci&#xf3;n resultante R1, se aplica la funci&#xf3;n agregada &#xa;Entro() que calcula para cada combinaci&#xf3;n de atributos condici&#xf3;n y clase la entrop&#xed;a de la relaci&#xf3;n R1 con respecto a estos &#xa;atributos. Posteriormente se calcula con la funci&#xf3;n agregada Gain(), la ganancia de Informaci&#xf3;n obtenida por el &#xa;particionamiento de la relaci&#xf3;n R1 por las diferentes combinaciones de atributos condici&#xf3;n y clase.&#xa; &#xa;Finalmente con la relaci&#xf3;n resultante R2, el operador describe classifier construye el &#xe1;rbol de decisi&#xf3;n. &#xa;"/>
+        <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/images/Herramienta/iconoMate2.png"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel19">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB Demi" size="18" style="0"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="fc" green="7b" red="3a" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="C4.5"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/images/Herramienta/iconoC45.png"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextArea" name="jTextArea3">
+      <Properties>
+        <Property name="columns" type="int" value="20"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB Demi" size="14" style="0"/>
+        </Property>
+        <Property name="rows" type="int" value="5"/>
+        <Property name="text" type="java.lang.String" value="El algoritmo C4.5 fue pensado para los casos en los que se tiene gran cantidad de objetos y atributos y se requiere &#xa;la construcci&#xf3;n de un &#xe1;rbol de clasificaci&#xf3;n sin mucho tiempo computacional. La estructura b&#xe1;sica del algoritmo es &#xa;iterativa. Se divide el conjunto de datos en subconjuntos de entrenamiento y prueba, como resultado se obtiene &#xa;un &#xe1;rbol capaz de clasificar todos los elementos de conjunto de entrenamiento, entonces el proceso termina, &#xa;en caso contrario, se a&#xf1;aden los objetos no clasificados nuevamente a los datos de entrenamiento y el proceso &#xa;contin&#xfa;a. El problema por tanto radica en los criterios para el c&#xe1;lculo del &#xe1;rbol para una cantidad arbitraria de &#xa;objetos. El punto crucial en el c&#xe1;lculo del &#xe1;rbol est&#xe1; en la elecci&#xf3;n del mejor atributo. C4.5 utiliza la entrop&#xed;a de&#xa; Shannon para esta decisi&#xf3;n y se demuestra que el costo computacional por cada iteraci&#xf3;n en C4.5 es proporcional &#xa;al producto del tama&#xf1;o del conjunto de entrenamiento, el n&#xfa;mero de atributos y el n&#xfa;mero de nodos que no son &#xa;hojas del &#xe1;rbol. C4.5 consta de un sistema de aprendizaje que obtiene reglas de clasificaci&#xf3;n y que utiliza &#xe1;rboles &#xa;como modelo de representaci&#xf3;n."/>
+        <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel20">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB Demi" size="18" style="0"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="fc" green="7b" red="3a" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Sliq"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/images/Herramienta/iconoSliq.png"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextArea" name="jTextArea4">
+      <Properties>
+        <Property name="columns" type="int" value="20"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB Demi" size="14" style="0"/>
+        </Property>
+        <Property name="rows" type="int" value="5"/>
+        <Property name="text" type="java.lang.String" value="SLIQ es un clasificador que usa &#xe1;rboles de decisi&#xf3;n y que pude manejar tanto  atributos num&#xe9;ricos como categoriales. &#xa;Tambi&#xe9;n usa una t&#xe9;cnica de pre-clasificaci&#xf3;n en la etapa de construcci&#xf3;n del &#xe1;rbol para reducir el coste de la evaluaci&#xf3;n &#xa;de particiones por atributos num&#xe9;ricos. Este proceso de clasificaci&#xf3;n se integra con una estrategia de crecimiento del &#xe1;rbol &#xa;primero en anchura para permitir a SLIQ clasificar grandes bases de datos residentes en disco. Adem&#xe1;s SLIQ usa un algoritmo &#xa;eficiente de obtenci&#xf3;n de subconjuntos para determinar las particiones con atributos categoriales. Otra caracter&#xed;stica interesante &#xa;es el uso de un nuevo algoritmo de poda basado en el principio de Descripci&#xf3;n de Longitud M&#xed;nima (MDL, Minimun Description &#xa;Length).&#xa;&#xa;Este algoritmo es poco costoso y produce &#xe1;rboles compactos y eficaces. La combinaci&#xf3;n de todo lo anterior hace que SLIQ posea&#xa;una gran escalabilidad y que sea capaz de clasificar grandes conjuntos de datos con un gran n&#xfa;mero de valores de clases y  de &#xa;los atributos."/>
+        <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextArea" name="jTextArea5">
+      <Properties>
+        <Property name="columns" type="int" value="20"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB Demi" size="14" style="0"/>
+        </Property>
+        <Property name="rows" type="int" value="5"/>
+        <Property name="text" type="java.lang.String" value="todos los &#xed;conos de clasificaci&#xf3;n contienen las mismas funciones; el submen&#xfa; se lo obtiene dando click derecho sobre el &#xed;cono situado &#xa;en el &#xe1;rea de trabajo"/>
+        <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel21">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB Demi" size="18" style="0"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="fc" green="7b" red="3a" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Funcionamiento:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel4">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/images/Herramienta/iconoMate.png"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextArea" name="jTextArea6">
+      <Properties>
+        <Property name="columns" type="int" value="20"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB Demi" size="14" style="0"/>
+        </Property>
+        <Property name="rows" type="int" value="5"/>
+        <Property name="text" type="java.lang.String" value="- Borrar: borra el &#xed;cono del &#xe1;rea de trabajo&#xa;- Configurar: se configura el n&#xfa;mero menor de registros por cada hoja. Es necesario para poder ejecutar el algoritmo.&#xa;"/>
+        <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel5">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/images/Herramienta/paraClasificadores.png"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextArea" name="jTextArea7">
+      <Properties>
+        <Property name="columns" type="int" value="20"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB Demi" size="14" style="0"/>
+        </Property>
+        <Property name="rows" type="int" value="5"/>
+        <Property name="text" type="java.lang.String" value="- Borrar: borra el &#xed;cono del &#xe1;rea de trabajo&#xa;- Configurar: se configura el n&#xfa;mero menor de registros por cada hoja. Es necesario para poder ejecutar el algoritmo.&#xa;"/>
+        <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

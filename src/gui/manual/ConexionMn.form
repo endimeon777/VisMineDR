@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.JTextArea" name="jTextArea4">
+      <Properties>
+        <Property name="columns" type="int" value="20"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB Demi" size="14" style="0"/>
+        </Property>
+        <Property name="rows" type="int" value="5"/>
+        <Property name="text" type="java.lang.String" value="-  Servidor: Es la direcci&#xf3;n Ip o nombre del servidor donde ese encuentra la base de datos.&#xa;&#xa;-  SGBD: Es el nombre del Sistema Gestor de Base de Datos, ya sea PostgreSql o MySql.&#xa;&#xa;-  Puerto: Es el puerto por con el cual trabaja el SGBD, este par&#xe1;metro generalmente se trabajo por defecto.&#xa;&#xa;-  Base de Datos: Es el nombre de la Base de Datos a la cual se quiere tener Acceso.&#xa;&#xa;- Usuario: Es el nombre del usuario que desea tener acceso a la base de datos.&#xa;&#xa;- Contrase&#xf1;a: Es la Contrase&#xf1;a del Usuario.&#xa;&#xa;Adem&#xe1;s esta ventana est&#xe1; compuesta por tres botones:&#xa;- Probar Conexi&#xf3;n: Permite Verificar si los par&#xe1;metros requeridos son correctos, Es necesario para Aceptar, y establecer&#xa;  la conexi&#xf3;n;&#xa;- Aceptar: Acepta la conexi&#xf3;n.&#xa;- Cancelar: no configura los par&#xe1;metros.&#xa;&#xa;Tambi&#xe9;n se encuentra una barra de estado, en donde se presenta toda la informaci&#xf3;n acerca de los par&#xe1;metros &#xa;escritos.&#xa;&#xa;&#x2022;  Seleccionar Atributos: Esta opci&#xf3;n se habilita  despu&#xe9;s de entrar al men&#xfa; configurar, aqu&#xed; se muestran todas las&#xa;    tablas y se selecciona todos los atributos de la base de datos. &#xa;"/>
+        <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+    </Property>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="277" max="-2" attributes="0"/>
+                              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jTextArea1" alignment="0" pref="761" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="188" max="-2" attributes="0"/>
+                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jTextArea2" alignment="0" min="-2" pref="689" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jTextArea3" min="-2" pref="761" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace pref="95" max="32767" attributes="0"/>
+              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="jTextArea5" min="-2" pref="761" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="232" max="-2" attributes="0"/>
+              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="257" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+              <Component id="jTextArea7" min="-2" pref="719" max="-2" attributes="0"/>
+              <EmptySpace pref="40" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel2" min="-2" pref="27" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+              <Component id="jTextArea1" min="-2" pref="47" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jTextArea2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+              <Component id="jLabel3" min="-2" pref="192" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+              <Component id="jTextArea3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+              <Component id="jTextArea5" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+              <Component id="jTextArea7" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="104" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB Demi" size="18" style="0"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="fc" green="7b" red="3a" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Conexi&#xf3;nBD"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextArea" name="jTextArea1">
+      <Properties>
+        <Property name="columns" type="int" value="20"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB Demi" size="14" style="0"/>
+        </Property>
+        <Property name="rows" type="int" value="5"/>
+        <Property name="text" type="java.lang.String" value="Permite establecer conexi&#xf3;n a una base de datos y ademas permite seleccionar seleccionar el conjunto&#xa;de datos a trabajar &#xa; "/>
+        <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextArea" name="jTextArea2">
+      <Properties>
+        <Property name="columns" type="int" value="20"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB Demi" size="14" style="0"/>
+        </Property>
+        <Property name="rows" type="int" value="5"/>
+        <Property name="text" type="java.lang.String" value="&#xa;&#x2022;  Borrar: Borra el icono del &#xe1;rea de trabajo.&#xa;&#x2022;  Configurar: esta opci&#xf3;n permite configurar los par&#xe1;metros para que se pueda conectar &#xa;    a la base de datos que se va a trabajar, configundolos de la siguiente manera:"/>
+        <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/images/Herramienta/iconoConexionBD.png"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/images/Herramienta/patresConexBD.png"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextArea" name="jTextArea3">
+      <Properties>
+        <Property name="columns" type="int" value="20"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB Demi" size="14" style="0"/>
+        </Property>
+        <Property name="rows" type="int" value="5"/>
+        <Property name="text" type="java.lang.String" value="-  Servidor: Es la direcci&#xf3;n Ip o nombre del servidor donde ese encuentra la base de datos.&#xa;&#xa;-  SGBD: Es el nombre del Sistema Gestor de Base de Datos, ya sea PostgreSql o MySql.&#xa;&#xa;-  Puerto: Es el puerto por con el cual trabaja el SGBD, este par&#xe1;metro generalmente se trabajo por defecto.&#xa;&#xa;-  Base de Datos: Es el nombre de la Base de Datos a la cual se quiere tener Acceso.&#xa;&#xa;- Usuario: Es el nombre del usuario que desea tener acceso a la base de datos.&#xa;&#xa;- Contrase&#xf1;a: Es la Contrase&#xf1;a del Usuario.&#xa;&#xa;Adem&#xe1;s esta ventana est&#xe1; compuesta por tres botones:&#xa;&#xa;- Probar Conexi&#xf3;n: Permite Verificar si los par&#xe1;metros requeridos son correctos, Es necesario para Aceptar, y establecer&#xa;  la conexi&#xf3;n;&#xa;- Aceptar: Acepta la conexi&#xf3;n.&#xa;- Cancelar: no configura los par&#xe1;metros.&#xa;&#xa;Tambi&#xe9;n se encuentra una barra de estado, en donde se presenta toda la informaci&#xf3;n acerca de los par&#xe1;metros &#xa;escritos.&#xa;&#xa;&#x2022;  Seleccionar Atributos: Esta opci&#xf3;n se habilita  despu&#xe9;s de entrar al men&#xfa; configurar, aqu&#xed; se muestran todas las&#xa;    tablas y se selecciona todos los atributos de la base de datos. &#xa;"/>
+        <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel4">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/images/Herramienta/seleccioTablasLetras.png"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextArea" name="jTextArea5">
+      <Properties>
+        <Property name="columns" type="int" value="20"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB Demi" size="14" style="0"/>
+        </Property>
+        <Property name="rows" type="int" value="5"/>
+        <Property name="text" type="java.lang.String" value="&#x2022; &#xc1;rea A: Presenta todas las tablas encontradas en la base de datos, se da click izquierdo, y aparece dibuja la tabla &#xa;   en el &#xe1;rea de tablas.&#xa;&#xa;&#x2022; &#xc1;rea B: es el &#xe1;rea en donde se dibujan todas las tablas seleccionadas, aqu&#xed; tambi&#xe9;n se muestra las relaciones que &#xa;   se encuentran entre las diferentes tablas, las cuales son las l&#xed;neas de color magenta, adem&#xe1;s en las tablas las llaves &#xa;   primarias tienes una llave  amarilla y las llaves for&#xe1;neas se pinta una llave de color gris.&#xa;&#xa;&#x2022; &#xc1;rea C: Se Muestra  la sentencia SQL que se va a ejecutar, es generada  al seleccionar los atributos.&#xa;&#xa;&#x2022; &#xc1;rea D: se presenta una vista de los datos que se van a trabajar.&#xa;&#xa;Tambi&#xe9;n aqu&#xed; encontramos tambi&#xe9;n un checkbox el cual nos da la opci&#xf3;n de mirar los nombres en la l&#xed;nea de relaci&#xf3;n &#xa;los cuales forman la llave for&#xe1;nea. En la misma parte encontramos dos botones:&#xa; &#xa;  - Bot&#xf3;n Ejecutar: nos permite una vista previa de los datos en el &#xc1;rea D, Es indispensable para aceptar los datos &#xa;    seleccionados.&#xa;  - Bot&#xf3;n Aceptar: Acepta los datos escojidos&#xa;&#xa;&#xa;&#xa;NOTA: El atributo que selecciona como de color Cyan, se toma como atributo clase, se puede modificar deseleccionando &#xa;y volviendo a seleccionar el atributo. Adem&#xe1;s cada tabla tiene un men&#xfa; que sale dando click derecho sobre la tabla:&#xa;"/>
+        <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel5">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/images/Herramienta/menuTabla.png"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextArea" name="jTextArea7">
+      <Properties>
+        <Property name="columns" type="int" value="20"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB Demi" size="14" style="0"/>
+        </Property>
+        <Property name="rows" type="int" value="5"/>
+        <Property name="text" type="java.lang.String" value="                  -&#x9;Borrar Tabla: borra la tabla del &#xe1;rea de trabajo.&#xa;                  -&#x9;Seleccionar Todos: Selecciona todos los atributos de la tabla.&#xa;                  -&#x9;Invertir Selecci&#xf3;n: Selecciona los atributos que no est&#xe1;n seleccionados y deselecciona los que est&#xe1;n &#xa;                     seleccionados.&#xa;&#xa;   &#x2022;  Cargar Datos: carga los datos en memoria, Es indispensable para empezar a trabajar.&#xa;"/>
+        <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

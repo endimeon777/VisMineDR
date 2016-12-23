@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title></title>
+</head>
+
+
+  <body>
+
+  
+<table border="0" width="90%">
+
+    <tbody>
+    <tr>
+
+      <td align="center"><img src="images/help/tariykdd.gif"></td>
+
+    </tr>
+
+    <tr>
+
+      <td>
+      
+      <h1 style="color: red;">View WEKA Tree</h1>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="justify">This viewer allows a graphic tree
+generation after a Classification algorithm gets done.&nbsp; Connection
+with other drag and drop components is similar&nbsp; in every viewer,
+and it is made as next.<br>
+      <br>
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="center"><img src="images/help/weka01.png" style="width: 400px; height: 350px;"></td>
+
+    </tr>
+
+    <tr>
+
+      <td align="justify">
+      <br>
+
+      When releasing the icon on the work
+area A. is possible to connect the icons&nbsp;through a thread
+B.&nbsp;&nbsp; When&nbsp; pressing right button on the icon, an
+emergent menu C appears ,&nbsp; which consists of the following
+options:&nbsp; <br>
+
+      <br>
+
+      
+      <ul>
+        <li>Delete option, deletes the filter from the work area.&nbsp; </li>
+        <li>Run option, executes the viewer.&nbsp; </li>
+        <li>View option displays a window to visualize eighter the tree as the generated rules. </li>
+      </ul>
+
+      <br>
+
+Its details are explained next.Visualization of the graphic tree:<br>
+
+      <br>
+      <br>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="center"><img src="images/help/weka02.png" style="width: 400px; height: 350px;"></td>
+
+    </tr>
+
+    <tr>
+
+      <td align="justify">Weka tree is shown:<br>
+      <br>
+A work area.<br>
+B, tabbed panel to see rules gotten from the tree. <br>
+G, error percent of the tree.&nbsp; <br>
+      <br>
+It is possible to display a menu for tree arrangements. The options are:&nbsp; <br>
+C&nbsp;Center on top node.<br>
+D, fit to screen, it fits the tree to the window size.<br>
+E Auto Scale that displays the tree in all its extention no matter the window size.<br>
+F&nbsp;Select Font for font size. <br>
+      <br>
+Rules Visualization:<br>
+      <br>
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="center"><img src="images/help/hierarchical04.png" style="width: 400px; height: 350px;"></td>
+
+    </tr>
+
+    <tr>
+
+      <td align="justify"><br>
+
+Rules generated from the tree are shown. This list can be sort by the
+column name. The list is sort upwards or downwards according to the
+case.
+      </td>
+
+    </tr>
+
+  
+  </tbody>
+</table>
+
+  
+</body>
+</html>

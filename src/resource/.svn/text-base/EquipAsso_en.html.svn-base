@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title></title>
+</head>
+
+
+  <body>
+
+  
+<table border="0" width="90%">
+
+    <tbody>
+    <tr>
+
+      <td align="center"><img src="images/help/tariykdd.gif"></td>
+
+    </tr>
+
+    <tr>
+
+      <td>
+      
+      <h1 style="color: red;">Algoritmo EquipAsso</h1>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="justify">EquipAsso is an algorithm for association based on new&nbsp; operators of the relational algebra for Association. Operator: <br>
+Equikeep () : It is an unary operator that restricts the values&nbsp;
+of the attributes of each one of tuplas of the relation R to&nbsp;the
+values of the attributes that satisfy one&nbsp; logical expression
+only.&nbsp;&nbsp; <br>
+Associator () : is an algebraic operator that contrary&nbsp; to the
+operators Selection or Restriction (), increases the cardinality&nbsp;
+or size of a relation&nbsp; due to generate from each tupla, all the
+possible combinations of the values&nbsp; of its attributes, as tuplas
+of a new relation conserving&nbsp; the same scheme.&nbsp; Therefore
+this operation, must be subsequent to&nbsp; n the operations in the
+process of query optimization.&nbsp;&nbsp; Associator operator
+generates, for each tupla of the relation R,&nbsp; all its possible
+subgroups (itemsets) of different size.&nbsp; Associator takes each
+tupla t from R and two parameters : final size and&nbsp; initial size
+as input, and returns, for each tupla t,&nbsp; the different attribute
+combinations Xi, of initial size tam&nbsp; until final size tam f, as
+tuplas in a new relation.&nbsp; The attributes order in the scheme R
+determines the attributes&nbsp; in the subgroups with values, the rest
+become null.&nbsp; The maximum size of itemset and therefore the
+maximum final size&nbsp; (finalsize) that can be taken as input&nbsp;
+corresponds to the value of the degree of the relation.&nbsp;&nbsp; In
+the first step&nbsp; the algorithm simply tells the number of
+occurrences of&nbsp; each item to determine frequent
+1-itemsets.&nbsp;&nbsp; In the subsequent step, with EquiKeep operator
+size 1 frequent itemsets are extracted&nbsp; from all the
+transactions&nbsp; making null the rest of values.&nbsp;&nbsp; Later
+the operator Associator is applied from Is&nbsp; =2 to degree n.&nbsp;
+The connection with other drag and drop components is similar&nbsp; for
+all algorithms, and it gest done as show below:<br>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="center"><img src="images/help/a01.png" style="width: 400px; height: 350px;"></td>
+
+    </tr>
+
+    <tr>
+
+      <td align="justify">
+      <br>
+When releasing the icon in the work area A. is possible to connect the
+icons&nbsp;&nbsp; by means of a thread.&nbsp;&nbsp;&nbsp;&nbsp; When doing right click on the icon
+appears an emergent menu,&nbsp;&nbsp; which consists of the following options :&nbsp;
+      <ul>
+        <li>Delete option, deletes the algorithm icon from the work area.</li>
+        <li>Configure option, adapts the parameters of the algorithm to the necessities&nbsp;of the analyst.</li>
+        <li>Run option executes the algorithm.</li>
+      </ul>
+The association algorithms configuration is similar in all of them and&nbsp;gets done as follows:<br>
+      <br>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="center"><img src="images/help/a02.png" style="width: 400px; height: 350px;"></td>
+
+    </tr>
+
+    <tr>
+
+      <td align="justify">
+      <br>
+When acceding to the configuration option, on the work area&nbsp;&nbsp; appears a
+window B, so the user can configure the support&nbsp;&nbsp; for the
+algorithm.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The execution of all the algorithms for association is
+similar.&nbsp;&nbsp; We accede to the Run option from the contextual menu.<br>
+      <br>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="center"><img src="images/help/a03.png" style="width: 400px; height: 350px;"></td>
+
+    </tr>
+
+    <tr>
+
+      <td align="justify">
+      <br>
+When executing the algorithm, its icon is changed by an animation,&nbsp;&nbsp; as
+it is in B, which indicates that the process is&nbsp;in execution. The run
+time, is proportional to the size of the data base&nbsp;and to the number
+and type of processes that this algorithm involves.<br>
+
+      </td>
+
+    </tr>
+
+  
+  </tbody>
+</table>
+
+  
+</body>
+</html>

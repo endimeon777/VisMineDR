@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+</head>
+
+
+  <body>
+
+  
+<table border="0" width="90%">
+
+    <tbody>
+    <tr>
+
+      <td align="center"><img src="images/help/tariykdd.gif"></td>
+
+    </tr>
+
+    <tr>
+
+      <td>
+      
+      <h1 style="color: red;">Filtro Reduction</h1>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="justify">El objetivo especifico de este filtro, es
+hacer una reduccion en el numero de transacciones, manteniendolas o
+eliminandolas, a partir de diferentes tecnicas y parametros de
+seleccion teniendo en cuenta que se puede realizar la reduccion tanto
+por rango como por valor que a su vez se selecciona las transacciones
+por atributo numerico o alfabetico.<br>
+      <br>
+Tecnica de Reduccion por Rango: Esta tecnica se encarga de reducir el
+conjunto de entrada, en un rango de transacciones, a partir de una
+transaccion inicial y otra final, de acuerdo al parametro escogido por
+el analista, el cual puede ser eliminar o mantener dichas transacciones.<br>
+      <br>
+Tecnica de Reduccion de Transacciones por Atributo: Esta tecnica se
+encarga de reducir el conjunto de entrada, dependiendo del tipo de
+datos que contenga el atributo seleccionado, los cuales pueden ser
+alfabeticos o numericos, si son numericos se debe suministrar un valor
+limitrofe y si son alfabeticos el analista debera seleccionar los
+atributos de su interes. Ademas de acuerdo al parametro escogido por el
+analista, el filtro eliminara o mantendra las transacciones
+seleccionadas.<br>
+      <br>
+
+La conexion con otros componentes drag and drop, es similar en todos los filtros, y se realiza como se muestra a continuacion. <br>
+      <br>
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="center"><img src="images/help/remove01.png" style="width: 400px; height: 350px;"></td>
+
+    </tr>
+
+    <tr>
+
+      <td align="justify">
+      <br>
+Al liberar el icono en el area de trabajo A es posible conectar los
+iconos por medio de un hilo B. Al hacer click derecho sobre el icono
+aparece un menu emergente C, el cual consta de las siguientes opciones:<br>
+
+          
+      <ul>
+
+          <li>La opcion Delete, borra el filtro del area de trabajo. Este filtro no contiene ventana de configuracion.</li>
+
+          <li>La opcion Configure, adapta los parametros del filtro a las necesidades del analista.</li>
+
+          <li>La opcion Run ejecuta la aplicacion del filtro.</li>
+
+          <li>La opcion View  muestra la ventana de vizualizacion de datos.</li>
+
+          
+      </ul>
+
+La configuracion del filtro, se realiza de la siguiente manera:<br>
+      <br>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="center"><img src="images/help/reduction02.png" style="width: 400px; height: 350px;"></td>
+
+    </tr>
+
+    <tr>
+
+      <td align="justify"><br>
+Al acceder a la opcion de configuracion se muestra B la ventana de
+configuracion correspondiente al filtro "Reduction". Los campos son:<br>
+      <br>
+Por rango, los parametros son Fila inicial donde se escribe la fila a
+partir de la cual inicia el rango y Fila final que es el limite
+superior del rango.<br>
+Por Valor: Se elige el nombre del atributo y luego en caso de que los
+valores a quitar sean numericos en el campo "Menores que" se especifica
+el numero a partir del cual se hace la reduccion.<br>
+      <br>
+Si el atributo es alfabetico se escribe su valor en el rea de texto y
+en las casillas de seleccion se especifica si ese valor se desea
+"Mantener" o "Remover". Aplicar: ejecuta el filtro.<br>
+      <br>
+
+Para visualizar los resultados obtenidos, hacemos uso de la opcion view mostrando una interfaz como la siguiente:<br>
+      <br>
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="center"><img src="images/help/remove02.png" style="width: 400px; height: 350px;"></td>
+
+    </tr>
+
+    <tr>
+
+      <td align="center"><img src="images/help/remove03.png" style="width: 400px; height: 350px;"></td>
+
+    </tr>
+
+    <tr>
+
+      <td align="justify"><br>
+Aparece la ventana de vizualizacion de datos filtrados y no filtrados. Los campos son:<br>
+      <br>
+
+A: Variables o nombres de los campos de la tabla.<br>
+
+B: Datos de entrada que son los datos que llegaron al filtro inicialmente.<br>
+
+C: Datos filtrados que son el resultado de haber aplicado el filtro.<br>
+
+D: nmero de registros eliminados al aplicar el filtro.<br>
+
+E: Numero de registros despues de aplicar el filtro.
+      </td>
+
+    </tr>
+
+  
+  </tbody>
+</table>
+
+  
+</body>
+</html>

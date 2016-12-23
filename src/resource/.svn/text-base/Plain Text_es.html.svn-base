@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+</head>
+<body>
+<div style="text-align: center;"><img src="images/help/tariykdd.gif"><br>
+</div>
+<div style="text-align: justify;"><br>
+</div>
+<h1 style="color: red; text-align: justify;">Conexion a Archivos Planos</h1>
+<div style="text-align: justify;"><br>
+La conexion por medio de archivo plano, se realiza con archivos <br>
+de extension .csv o .arff, el cual debe contener los titulos de los <br>
+atributos y los valores de los mismos. <br>
+<br>
+<t ÿ="" aliÿÿÿÿcent="">Ejemplo de archivo .arff</t><br>
+<t ÿ="" aliÿÿÿÿcent=""></t><br>
+<t ÿ="" aliÿÿÿÿcent="">
+</t></div>
+<div style="border: medium solid ; width: 350px; text-align: left;">
+@attribute estado {Soleado,Nublado,Lluvioso,Seco}<br>
+
+@attribute temperatura {Caliente,Templado,Fresco}<br>
+ 
+@attribute humedar {Alta,Normal}<br>
+
+@attribute viento {Debil,Fuerte}<br>
+ 
+@attribute jtennis {si,no}<br>
+<br>
+
+
+@data<br>
+
+Soleado,Caliente,Alta,Debil,no<br>
+
+Soleado,Caliente,Alta,Fuerte,no<br>
+
+Nublado,Caliente,Alta,Debil,si<br>
+
+Lluvioso,Templado,Alta,Debil,si<br>
+
+Lluvioso,Fresco,Normal,Debil,si<br>
+
+Lluvioso,Fresco,Normal,Fuerte,no<br>
+
+</div>
+<div style="text-align: justify;">
+<br>
+La conexion con otros componentes drag and drop, es similar en los
+modulos de conexion, y se realiza como se muestra a continuacion.<br>
+<br>
+
+    
+    
+      
+<div style="text-align: center;"><img src="images/help/file01.png" style="width: 400px; height: 350px;">
+    
+    
+      
+      <br>
+</div>
+Al liberar el icono del area A en el area de trabajo B es posible
+conectar los iconos
+por medio de un hilo. Al hacer click derecho sobre el icono aparece un
+menu emergente, el cual consta de las siguientes opciones:<br>
+
+          </div>
+<ul style="text-align: justify;">
+
+          <li>La opci&oacute;n Delete, borra el algoritmo del area de trabajo.</li>
+
+          <li>La opci&oacute;n Configure, adapta los par&aacute;metros del algoritmo a las necesidades del analista.</li>
+
+          <li>La opci&oacute;n Run ejecuta la aplicaci&oacute;n del algoritmo.</li>
+
+          
+</ul>
+<div style="text-align: justify;">
+          La configuracion del algoritmo es similar en todos los algoritmos de 
+Clasificacion, se realiza de la siguiente manera:<br>
+<br>
+
+      
+    
+    
+      
+<div style="text-align: center;"><img src="images/help/file02.png" style="width: 400px; height: 350px;">
+    
+    
+      
+      <br>
+</div>
+<br>
+Aparece la ventana de visualizacion de datos cargados desde archivo plano. La cual esta compuesta por: 
+      </div>
+<ul style="text-align: justify;">
+
+	    <li>A boton "Browse" que permite la navegacion en el sistema de archivos.
+            </li>
+
+	    <li>B la grilla en la que seran mostrados los datos cargados
+            </li>
+
+	    <li>C las opciones "Marquet Basket" y "Multivaluled" que el usuario puede seleccionar segun el caso.
+            </li>
+
+            <li>D los botones de aceptar o cancelar la operacion "Accept" y "Cancel".
+	    </li>
+
+      
+</ul>
+<div style="text-align: justify;">
+      Para cargar el archivo, accedemos a la opcion Load del menu contextual.<br>
+<br>
+
+      
+    
+    
+      
+<div style="text-align: center;"><img src="images/help/file03.png" style="width: 400px; height: 350px;">
+    
+  
+  </div>
+</div>
+</body>
+</html>

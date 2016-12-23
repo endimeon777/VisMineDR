@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Data Base Connection</title>
+</head>
+
+
+<body>
+
+
+
+  
+<table border="0" width="90%">
+
+
+
+    <tbody>
+
+
+    <tr>
+
+
+
+      <td align="center"><img src="images/help/tariykdd.gif"></td>
+
+
+
+    </tr>
+
+
+
+    <tr>
+
+
+
+      <td>
+      
+      
+      
+      <h1 style="color: red;">Data Base Connection</h1>
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+    <tr>
+
+
+
+      <td align="justify">When doing right click on this icon, the following options appear: <br>
+      <br>
+      <ul>
+        <li>Delete: used to eliminate the icon from the work area. </li>
+        <li>Configure: used to configure the connection to a data base. </li>
+        <li>Attributes Selection: used to select graphically data that&nbsp;would be used ahead. </li>
+        <li>Load: it executes query that is generated in the attributes selection. </li>
+      </ul>
+      <br>
+Configurarcion is made by means of the following interface:&nbsp;
+
+      </td>
+
+
+
+    </tr>
+
+
+
+    <tr>
+
+
+
+      <td align="center"><img alt="" src="images/help/db01.png" style="width: 400px; height: 195px;"></td>
+
+
+
+    </tr>
+
+
+
+    <tr>
+
+
+
+      <td align="justify">
+      <br>
+Fields from the configuration window to connect to data bases: <br>
+      <br>
+A: List of ODBC controllers for several types of data bases. <br>
+B: user name of the data base. <br>
+C: Name of the data base. <br>
+D: Host name.<br>
+E: Password: key to access to the data base.<br>
+F: port used for comunicating with the data base. <br>
+G: connection button. <br>
+H: button to accept the connection. <br>
+I: message that indicates the state of the connection. <br>
+      <br>
+By means of the following window si possible the attribute selection&nbsp;in the data base.<br>
+
+
+
+      </td>
+
+
+
+    </tr>
+
+
+
+    <tr>
+
+
+
+      <td align="center"><img src="images/help/db02.png" style="width: 400px; height: 350px;"></td>
+
+
+
+    </tr>
+
+
+
+    <tr>
+
+
+
+      <td>Appears the window for attributes selection.<br>
+      <br>
+A: drop-down list of the tables of the data base to which&nbsp; it has
+been connected. When selecting one of them its graphical representation
+will appear on the work space E.<br>
+B: option that allows to see the relations established through&nbsp; a line between the tables.<br>
+C: this option is useful for market basket problems&nbsp; <br>
+D: option to work multiestimated tables.&nbsp; <br>
+F: line that allows to make relations between attributes of two
+tables.&nbsp; the result of the established relation is reflected in
+query.&nbsp; <br>
+G: If click becomes on one of the attributes, an icon of&nbsp;
+verification appears indicating the fields used when executing query. <br>
+H: space in which query is created. It is possible to edit it manually.&nbsp; <br>
+I: button for query execution. <br>
+J: table for execution query results.&nbsp; <br>
+K: button to accept operations.&nbsp; <br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+</body>
+</html>

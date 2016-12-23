@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+</head>
+
+
+  <body>
+
+  
+<table border="0" width="90%">
+
+    <tbody>
+    <tr>
+
+      <td align="center"><img src="images/help/tariykdd.gif"></td>
+
+    </tr>
+
+    <tr>
+
+      <td>
+      
+      <h1 style="color: red;">Conexion a Bases de Datos</h1>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="justify">Al hacer click derecho sobre este icono, se muestran las siguientes opciones:<br>
+
+	
+      <ul>
+
+        <li>Delete: Usada para eliminar el icono del area de trabajo.</li>
+
+        <li>Configure: usada para configurar la conexion a una base de datos.</li>
+
+        <li>Seleccion de atributos: usada para seleccionar de forma grafica los datos que seran usados mas adelante.</li>
+
+        <li>Cargar: ejecuta el query que se genera en la seleccion de atributos.</li>
+        <br>
+
+        La configurarcion se realiza mediante la siguiente interfaz:<br>
+      </ul>
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="center"><img alt="" src="images/help/db01.png" style="width: 400px; height: 195px;"></td>
+
+    </tr>
+
+    <tr>
+
+      <td align="justify">
+      <br>
+Las opciones de la ventana de confiuracion de conexion a bases de datos tiene los siguientes campos:<br>
+      <br>
+
+A: Lista de controladores JDBC para varios tipos de bases de datos.<br>
+
+B: Nombre del usuario de la base de datos.<br>
+
+C: Nombre de la base de datos.<br>
+
+D: Nombre del servidor.<br>
+
+E: Password: clave de acceso a la base de datos.<br>
+
+F: Numero del puerto utilizado para la comunicacin con la base de datos.<br>
+
+G: Boton de conexion.<br>
+
+H: Boton para aceptar la conexion realizada.<br>
+
+I: Mensaje que indica el estado  de la conexion.<br>
+      <br>
+
+Por medio de la siguiente ventana se realiza la seleccion de los atributos 
+en la base de datos<br>
+      <br>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="center"><img src="images/help/db02.png" style="width: 400px; height: 350px;"></td>
+
+    </tr>
+
+    <tr>
+
+      <td>Aparece la ventana de seleccion de atributos.<br>
+      <br>
+A: Lista desplegable de las tablas de la base de datos a la que se ha
+conectado. Al seleccionar una de ellas su representacion grafica
+aparecera en el espacio de trabajo E.<br>
+
+B: Opcion que permite ver las relaciones establecidas a traves de la linea de conexion de atributos entre las tablas.<br>
+
+C: Esta opcion es util cuando se trabajan problemas de canasta de mercado.<br>
+
+D: Opcion para trabajar tablas multivaluadas.<br>
+F: Linea que permite realizar las relaciones entre atributos de dos
+tablas. El resultado de la relacion establecida se
+re&iuml;&not;&sbquo;eja en el query.<br>
+G: Si se hace click sobre uno de los atributos aparece un
+&Auml;&plusmn;cono de verifiacion que indica los campos que se
+mostraran al ejecutar el query.<br>
+
+H: Espacio en el que se crea el query. Es posible editarlo manualmente.<br>
+
+I: Boton de ejecucion del query.<br>
+
+J: Tabla en la que se muestra el resultado de la ejecucion del query.<br>
+
+K: Boton para aceptar las operaciones realizadas.<br>
+      <br>
+
+      </td>
+
+    </tr>
+
+  
+  </tbody>
+</table>
+
+  
+</body>
+</html>

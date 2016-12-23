@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+ </head>
+  <body>
+  <table border="0" width="90%">
+    <tr>
+      <td align="center"><img src="images/help/tariykdd.gif"/></td>
+    </tr>
+    <tr>
+      <td>
+      <h1 style=" color:red;">Algoritmo EquipAsso</h1>
+      </td>
+    </tr>
+    <tr>
+      <td align="justify">EquipAsso es un algoritmo de asociacion basado en nuevos operadores del Algebra Relacional para Asociacion. Sus operadores son:<br><br>
+      Equikeep (&chi;): Es un operador unario que restringe los valores de los atributos de cada una de las tuplas de la relacion R a unicamente los valores de los atributos que satisfacen una expresion logica.<br><br>
+      Associator (&alpha;): Es un operador algebraico unario que al contrario del operador Seleccion o Restriccion (&sigma;), aumenta la cardinalidad o el tama&ntilde;o de una relacion ya que genera a partir de cada tupla de una relacion, todas las posibles combinaciones de los valores de sus atributos, como tuplas de una nueva relacion conservando el mismo esquema. Por esta razon esta operacion, debe ser posterior a la mayor de operaciones en el proceso de optimizacion de una consulta.<br><br>
+El operador Associator genera, por cada tupla de la relacion R, todos sus posibles subconjuntos (itemsets) de diferente tama&ntilde;o. Associator toma cada tupla t de R y dos parametros: tam inicial y tam final como entrada, y retorna, por cada tupla t, las diferentes combinaciones de atributos Xi , de tama&ntilde;o tam inicial hasta tama&ntilde;o tam final , como tuplas en una nueva relacion. El orden de los atributos en el esquema de R determina los atributos en los subconjuntos con valores, el resto se hacen nulos. El tama&ntilde;o maximo de un itemset y por consiguiente el tama&ntilde;o final maximo (tam final) que se puede tomar como entrada es el correspondiente al valor del grado de la relacion.<br><br>
+      En el primer paso el algoritmo simplemente cuenta el numero de ocurrencias de cada item para determinar los 1-itemsets frecuentes. En el subsiguiente paso, con el operador EquiKeep se extraen de todas las transacciones los itemsets frecuentes tama&ntilde;o 1 haciendo nulos el resto de valores. Luego se aplica el operador Associator desde Is=2 hasta el grado n.<br><br>
+       La conexion con otros componentes drag and drop, es similar en todos los algoritmos, y se realiza como se muestra a continuacion.<br><br>
+      </td>
+    </tr>
+    <tr>
+      <td align="center"><img src="images/help/a01.png" style="width:400px; height:350px"/></td>
+    </tr>
+    <tr>
+      <TD align="justify">
+      <br>
+        Al liberar el icono en el &aacute;rea de trabajo A. es posible conectar los iconos por medio de un hilo. Al hacer click derecho sobre el icono aparece un menu emergente, el cual consta de las siguientes opciones:<br>
+          <ul>
+          <li>La opci&oacute;n Delete, borra el algoritmo del area de trabajo.</li>
+          <li>La opci&oacute;n Configure, adapta los par&aacute;metros del algoritmo a las necesidades del analista.</li>
+          <li>La opci&oacute;n Run ejecuta la aplicaci&oacute;n del algoritmo.</li>
+          </ul>
+          La configuraci&oacute;n del algoritmo se realiza de la siguiente manera:<br><br>
+      </td>
+    </tr>
+    <tr>
+      <td align="center"><img src="images/help/a02.png" style="width:400px; height:350px"/></td>
+    </tr>
+    <tr>
+      <td align="justify">
+      <br>
+      Al acceder a la opci&oacute;n de configuraci&oacute;n, sobre el &aacute;rea de trabajo aparece una ventana B, para que el usuario configure el soporte del algoritmo. Para ejecutar el algoritmo, accedemos a la opci&oacute;n Run del menu contextual.<br><br>
+      </td>
+    </tr>
+    <tr>
+      <td align="center"><img src="images/help/a03.png" style="width:400px; height:350px"/></td>
+    </tr>
+    <tr>
+      <td align="justify">
+      <br>
+      Al ejecutar el algoritmo, su icono cambiara por una animaci&oacute;n, as&iacute; como se muestra en B, lo cual indica que el proceso esta en ejecuci&oacute;n. El tiempo de ejecuci&oacute;n, es proporcional al tam&ntilde;o de la base de datos y al n&uacute;mero y tipo de  procesos que dicho algoritmo involucre.<br><br>
+      </td>
+    </tr>
+  </table>
+  </body>
+</html>

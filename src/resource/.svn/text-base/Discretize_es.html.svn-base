@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+</head>
+
+
+  <body>
+
+  
+<table border="0" width="90%">
+
+    <tbody>
+    <tr>
+
+      <td align="center"><img src="images/help/tariykdd.gif"></td>
+
+    </tr>
+
+    <tr>
+
+      <td>
+      
+      <h1 style="color: red;">Filtro Discretize</h1>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="justify">El objetivo especifico de este filtro,
+transformar un valor numerico discontinuo en un rango continuo, por
+medio de dos tecnicas:<br>
+      <br>
+Discretizar con numero de rangos y discretizar con el tama&ntilde;o del
+rango, llevando un valor dicho valor discontinuo a un formato continuo.<br>
+      <br>
+
+Tecnica de discretizar con numero de rangos:<br>
+Esta tecnica se encarga de tomar el minimo y el maximo valor del
+atributo numerico seleccionado, con el objetivo de hacer una division
+clasificatoria, dependiendo del numero de rangos otorgado por el
+analista y tambien teniendo en cuenta los rangos extremos: desde
+infinito hasta el minimo valor y desde el maximo valor hasta +infinito.<br>
+      <br>
+
+Tecnica de discretizar con el tama&ntilde;o del rango:<br>
+Esta tecnica se encarga de delimitar rangos, en incrementos, segun el
+tama&ntilde;o del rango otorgado por el analista, dentro de los valores
+comprendidos entre el minimo y maximo valor del atributo numerico
+seleccionado, tambien se tiene en cuenta los rangos extremos los cuales
+son desde el infinito hasta el minimo valor, y desde el maximo valor
+hasta el + infinito.<br>
+      <br>
+
+La conexion con otros componentes drag and drop, es similar en todos los filtros, y se realiza como se muestra a continuacion.<br>
+      <br>
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="center"><img src="images/help/remove01.png" style="width: 400px; height: 350px;"></td>
+
+    </tr>
+
+    <tr>
+
+      <td align="justify">
+      <br>
+Al liberar el icono en el area de trabajo A es posible conectar los
+iconos por medio de un hilo B. Al hacer click derecho sobre el icono
+aparece un menu emergente C, el cual consta de las siguientes opciones:<br>
+
+          
+      <ul>
+
+          <li>La opcion Delete, borra el filtro del area de trabajo. Este filtro no contiene ventana de configuracion.</li>
+
+          <li>La opcion Configure, adapta los parametros del filtro a las necesidades del analista.</li>
+
+          <li>La opcion Run ejecuta la aplicacion del filtro.</li>
+
+          <li>La opcion View  muestra la ventana de vizualizacion de datos.</li>
+
+          
+      </ul>
+
+La configuracion del filtro, se realiza de la siguiente manera:<br>
+      <br>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="center"><img src="images/help/discretize01.png" style="width: 400px; height: 350px;"></td>
+
+    </tr>
+
+    <tr>
+
+      <td align="justify"><br>
+Al acceder a la opcion de configuracion se muestra B la ventana de
+configuracion correspondiente al filtro "Discretize". Los campos son:<br>
+      <br>
+
+Atributo, en el cual se escribe el nombre del atributo a discretizar.<br>
+
+Discretizar por, "Numero de rango": se puede establecer el numero de rangos a crear.<br>
+
+Tama&ntilde;o del rango, se especifica el tama&ntilde;o del rango.<br>
+
+Aplicar, ejecuta el filtro. Resetear: deja los campos en blanco<br>
+      <br>
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="center"><img src="images/help/remove02.png" style="width: 400px; height: 350px;"></td>
+
+    </tr>
+
+    <tr>
+
+      <td align="center"><img src="images/help/remove03.png" style="width: 400px; height: 350px;"></td>
+
+    </tr>
+
+    <tr>
+
+      <td><br>
+Aparece la ventana de vizualizacion de datos filtrados y no filtrados. Los campos son:<br>
+      <br>
+
+A: Variables o nombres de los campos de la tabla.<br>
+
+B: Datos de entrada que son los datos que llegaron al filtro inicialmente.<br>
+
+C: Datos filtrados que son el resultado de haber aplicado el filtro.<br>
+
+D: nmero de registros eliminados al aplicar el filtro.<br>
+
+E: Numero de registros despues de aplicar el filtro.
+      </td>
+
+    </tr>
+
+  
+  </tbody>
+</table>
+
+  
+</body>
+</html>

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/repos/tariykdd/!svn/ver/562/trunk/Tariy_v0.7/src/algorithm/classification/c45_1
+END
+TariyTableModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/repos/tariykdd/!svn/ver/562/trunk/Tariy_v0.7/src/algorithm/classification/c45_1/TariyTableModel.java
+END
+TreeViewer.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/repos/tariykdd/!svn/ver/162/trunk/Tariy_v0.7/src/algorithm/classification/c45_1/TreeViewer.java
+END
+compareConfidence.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/repos/tariykdd/!svn/ver/261/trunk/Tariy_v0.7/src/algorithm/classification/c45_1/compareConfidence.java
+END
+TreeCounter.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/repos/tariykdd/!svn/ver/523/trunk/Tariy_v0.7/src/algorithm/classification/c45_1/TreeCounter.java
+END
+Leaf.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/repos/tariykdd/!svn/ver/260/trunk/Tariy_v0.7/src/algorithm/classification/c45_1/Leaf.java
+END
+Attribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/repos/tariykdd/!svn/ver/301/trunk/Tariy_v0.7/src/algorithm/classification/c45_1/Attribute.java
+END
+Split.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/repos/tariykdd/!svn/ver/159/trunk/Tariy_v0.7/src/algorithm/classification/c45_1/Split.java
+END
+C45TreeGUI.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/repos/tariykdd/!svn/ver/163/trunk/Tariy_v0.7/src/algorithm/classification/c45_1/C45TreeGUI.java
+END
+C45TreeModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/repos/tariykdd/!svn/ver/163/trunk/Tariy_v0.7/src/algorithm/classification/c45_1/C45TreeModel.java
+END

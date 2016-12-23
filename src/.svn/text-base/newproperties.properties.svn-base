@@ -1,0 +1,41 @@
+# Sample ResourceBundle properties file
+
+Avanzado...=Advance...
+
+Estableciendo_Conexion...=Recive Connections...
+
+Conectar...=Connect...
+
+localhost=localhost
+
+mine=mine
+
+postgres=postgres
+
+org.postgresql.Driver=org.postgresql.Driver
+
+Puerto\:=Port\:
+
+Host\:=Host\:
+
+Base_de_Datos\:=DataBase\:
+
+Password\:=Password\:
+
+Usuario\:=User\:
+
+Jdbc_Driver\:=Jdbc Driver\:
+
+Conexion=Connection
+
+Button.darkShadow=Button.darkShadow
+
+Dialog=Dialog
+
+Button.focus=Button.focus
+
+Arial=Arial
+
+postgres1=postgres1
+
+Conexion\ Exitosa\!\!\!=Connection Ok\!\!\!

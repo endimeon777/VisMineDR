@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+  
+  <title></title>
+</head>
+
+
+<body>
+
+
+  
+<table border="0" width="90%">
+
+
+    <tbody>
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/tariykdd.gif"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td>
+      
+      
+      <h1 style="color: red;">View Generator</h1>
+
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="justify">This viewer lets association rules
+generation founded on given parameters.&nbsp; Connection with other
+drag and drop components is similar&nbsp; in every viewer, and it is
+made as next.<br>
+
+      <br>
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/generator01.png" style="width: 400px; height: 350px;"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="justify">
+      When releasing the icon on the work
+area A. is possible to connect the icons&nbsp;through a thread
+B.&nbsp;When&nbsp; pressing right button on the icon, an emergent menu
+C appears ,&nbsp; which consists of the following options:&nbsp; <br>
+
+      
+      <ul>
+
+        <li>Delete option, deletes the filter from the work area. </li>
+
+        <li>Run option, executes the filter. </li>
+
+        <li>View option shows the data vizualizacion window. </li>
+
+      
+      </ul>
+
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/generator02.png" style="width: 400px; height: 350px;"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="justify">A configuration window B appears. The user
+can setup a confidence value the association rules are going to be
+filtered with. To execute the viewer, choose the Run option from
+contextual menu.<br>
+
+      <br>
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/generator03.png" style="width: 400px; height: 350px;"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td>On the work area appears a window with rules gotten from&nbsp;Association
+mining algorithms. Clicking on A, rules window disappear and if user do
+so on B, association rules report can be filed.&nbsp;<br>
+
+      </td>
+
+    </tr>
+
+  
+  </tbody>
+</table>
+
+<br>
+
+</body>
+</html>

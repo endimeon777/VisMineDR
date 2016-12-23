@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+ </head>
+  <body>
+  <table border="0" width="90%">
+    <tr>
+      <td align="center"><img src="images/help/tariykdd.gif"/></td>
+    </tr>
+    <tr>
+      <td>
+      <h1 style=" color:red;">Visor Prediction</h1>
+      </td>
+    </tr>
+    <tr>
+      <td align="justify">Este visor permite predesir los valores de los atributos pertenecientes a la columna objetivo o proposito de la clasificacion, basandose en el arbol de decision obtenido a partir de un algoritmo de clasificacion y el flujo de entrada de datos obtenidos de la conexion con una base de datos o un archivo plano.<br><br>
+La conexion con otros componentes drag and drop, se realiza con dos modulos especificos los cuales son: con algoritmos de clasificacion y modulo de conexion que puede ser con base de datos o archivo plano con extension .arff. <br><br></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="images/help/prediction01.png" style="width:400px; height:350px"/></td>
+    </tr>
+    <tr>
+      <TD align="justify">
+      <br>
+        El icono D &quot;Prediction&quot; aparece en el area de trabajo. El uso de este componente esta condicionado a los siguientes requerimientos.<br><br>
+Debe haberse cargado un conjunto de datos de entrenamiento A, debio haberse aplicado un algoritmo de clasificacion B a conjunto A y debe haberse cargado un conjunto de datos de evaluacion C que es al que se le va aplicar el modelo obtenido despues de ejecutar B.<br><br>
+Al icono D le llegan alimentacion de informacion tanto de A como B y de esta manera es posible hacer prediccion sobre el conjunto de evaluacion.<br><br>
+La visualizacion de los datos obtenidos se presentan en una ventana como la siguiente:<br><br>
+      </td>
+    </tr>
+    <tr>
+      <td align="center"><img src="images/help/prediction02.png" style="width:400px; height:350px"/></td>
+    </tr>
+  </table>
+  </body>
+</html>

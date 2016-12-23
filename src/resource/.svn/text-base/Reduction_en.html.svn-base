@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title></title>
+</head>
+
+
+<body>
+
+
+  
+<table border="0" width="90%">
+
+
+    <tbody>
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/tariykdd.gif"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td>
+      
+      
+      <h1 style="color: red;">Filter Reduction</h1>
+
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="justify">Reduces the number of transactions. Uses
+different techniques and parameters for selection&nbsp; considering
+that reduction can be made the&nbsp; by rank as by value. Transactions
+are selected&nbsp; by the attribute wheter is a number or wheter
+alphabetical value.<br>
+      <br>
+Reduction by Rank: This technique is in charge to reduce&nbsp; the
+input set, in a rank of transactions, from one&nbsp; initial
+transaction to a final one according to the parameter chosen by&nbsp;
+the analyst, which can be: to delete or keep these transactions.&nbsp; <br>
+      <br>
+Reduction of Transactions by Attribute:&nbsp; This technique is in
+charge to reduce to the input set, depending&nbsp; on the data type
+that contains the selected attribute, which&nbsp; can be alphabetical
+or numerical, if&nbsp; numerical, a numerical limit must be provide
+if&nbsp; alphabetical, the analyst can select the attributes of his
+interest.&nbsp; In addition, according to the parameter selected by the
+analyst, the filter&nbsp;&nbsp; will delete or keep the selected
+transactions.&nbsp;&nbsp; <br>
+      <br>
+Connection with other drag and drop components is similar&nbsp; in every filter, and it is made as next. <br>
+      <br>
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/remove01.png" style="width: 400px; height: 350px;"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="justify">
+      <br>
+
+When releasing the icon on the work area A. is possible to connect the
+icons&nbsp;through a thread B.&nbsp;&nbsp; When&nbsp; pressing right button on the icon, an
+emergent menu C appears ,&nbsp; which consists of the following options: <br>
+
+      
+      <ul>
+        <li>Delete option, deletes the filter from the work area.&nbsp;&nbsp;&nbsp;</li>
+        <li>Run option, executes the filter.&nbsp;&nbsp;&nbsp;</li>
+        <li>Configuration option, adapts the filter parameters to the analyst&nbsp; necessities.</li>
+        <li>View option shows the data vizualizacion window.&nbsp;&nbsp;&nbsp;&nbsp;</li>
+      </ul>
+
+Configuration of the filter, is made as follows:<br>
+
+      <br>
+
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/reduction02.png" style="width: 400px; height: 350px;"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="justify">Acceding to the configuration option, the "Reduction"&nbsp;configuration window B&nbsp;appears. Fields are:<br>
+      <br>
+      <ul>
+        <li>By rank, parameters are, initial Row, where&nbsp; the rank starts and final Row, rank superior limits&nbsp;&nbsp;&nbsp; </li>
+        <li>By Value : The name of the attribute is chosen and then, in
+case that&nbsp; values to clear were numerical, in the "Menors" field
+the number from which the reduction becomes must be written. &nbsp;If
+the attribute is alphabetical, its value must be write in the text area
+and&nbsp; must be especified if that value is desired&nbsp; to
+keep&nbsp;or deleted.&nbsp; </li>
+        <li>Apply: executes the filter.&nbsp;&nbsp;&nbsp; </li>
+      </ul>
+      <br>
+To visualize the obtained results, we do use of the view option&nbsp;&nbsp; which shows an interface like is next:&nbsp;&nbsp;<br>
+
+      <br>
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/remove02.png" style="width: 400px; height: 350px;"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/remove03.png" style="width: 400px; height: 350px;"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="justify"><br>
+Appears the vizualizacion window for filtered and non filtered data.&nbsp;&nbsp; The fields are:&nbsp;&nbsp; <br>
+
+      <br>
+
+A: Variables or names of the fields in the table.&nbsp; <br>
+
+B: Input data that initially arrived to the filter.&nbsp; <br>
+
+C:Filtered data that are the turn out after having applied the filter.&nbsp; <br>
+
+D: Number of deleted registries when applying the filter.&nbsp; <br>
+
+E: Number of registries after applying filter.&nbsp;
+      </td>
+
+
+    </tr>
+
+
+  
+  
+  </tbody>
+</table>
+
+
+  
+</body>
+</html>

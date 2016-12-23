@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+</head>
+
+
+<body>
+
+
+  
+<table border="0" width="90%">
+
+
+    <tbody>
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/tariykdd.gif"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td>
+      
+      
+      <h1 style="color: red;">Filter Numeric Range</h1>
+
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="justify">Deletes numeric attribute values that are
+out of a determinated rank.&nbsp; Values are repalced with null
+values.&nbsp;&nbsp; Connection with other drag and drop components is
+similar&nbsp; in every filter, and it is made as next.<br>
+      <br>
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/remove01.png" style="width: 400px; height: 350px;"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="justify">
+      <br>
+When releasing the icon on the work area A. is possible to connect the
+icons&nbsp;through a thread B.&nbsp;&nbsp; When&nbsp; pressing right button on the icon, an
+emergent menu C appears ,&nbsp; which consists of the following options: <br>
+
+      
+      <ul>
+        <li>Delete option, deletes the filter from the work area.&nbsp;&nbsp;&nbsp;</li>
+        <li>Run option, executes the filter.&nbsp;&nbsp;&nbsp;</li>
+        <li>Configuration option, adapts the filter parameters to the analyst&nbsp; necessities.</li>
+        <li>View option shows the data vizualizacion window.&nbsp;&nbsp;&nbsp;&nbsp;</li>
+      </ul>
+
+Configuration of the filter, is made as follows:<br>
+
+      <br>
+
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/numeric01.png" style="width: 400px; height: 350px;"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="justify">Acceding to the configuration option, the "Numeric Range"&nbsp;configuration window B&nbsp;appears. The fields are: <br>
+      <br>
+Attribute, name of the attribute to discretize&nbsp; its type is numeric. <br>
+Replace rank with null values: rank of data that would be turned to null. <br>
+Minimun value: lower bound of the rank.<br>
+Maximum value: upper bound of the rank. <br>
+Apply: executes the filter. <br>
+Reset: default values. <br>
+      <br>
+To visualize the obtained results, we do use of the view option&nbsp;&nbsp; which shows an interface like is next: <br>
+      <br>
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/remove02.png" style="width: 400px; height: 350px;"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/remove03.png" style="width: 400px; height: 350px;"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td><br>
+Appears the vizualizacion window for filtered and non filtered data.&nbsp;&nbsp; The fields are:&nbsp;&nbsp; <br>
+
+      <br>
+
+A: Variables or names of the fields in the table.&nbsp; <br>
+
+B: Input data that initially arrived to the filter.&nbsp; <br>
+
+C:Filtered data that are the turn out after having applied the filter.&nbsp; <br>
+
+D: Number of deleted registries when applying the filter.&nbsp; <br>
+
+E: Number of registries after applying filter.</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

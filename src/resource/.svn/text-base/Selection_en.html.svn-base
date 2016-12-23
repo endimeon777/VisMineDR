@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title></title>
+</head>
+
+
+<body>
+
+
+  
+<table border="0" width="90%">
+
+
+    <tbody>
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/tariykdd.gif"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td>
+      
+      
+      <h1 style="color: red;">Filter Selection</h1>
+
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="justify">Selects&nbsp;attributes&nbsp;and&nbsp;objective
+attributes on an input set.&nbsp;Is used especially in
+classification.&nbsp;&nbsp; Connection with other drag and drop
+components is similar toall components and it is made as follows.<br>
+
+      <br>
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/remove01.png" style="width: 400px; height: 350px;"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="justify">
+      <br>
+
+When releasing the icon on the work area A. is possible to connect the
+icons&nbsp;through a thread B.&nbsp;&nbsp; When&nbsp; pressing right button on the icon, an
+emergent menu C appears ,&nbsp; which consists of the following options: <br>
+
+      
+      <ul>
+        <li>Delete option, deletes the filter from the work area.&nbsp;&nbsp;&nbsp;</li>
+        <li>Run option, executes the filter.&nbsp;&nbsp;&nbsp;</li>
+        <li>Configuration option, adapts the filter parameters to the analyst&nbsp; necessities.</li>
+        <li>View option shows the data vizualizacion window.&nbsp;&nbsp;&nbsp;&nbsp;</li>
+      </ul>
+
+Configuration of the filter, is made as follows:<br>
+
+      <br>
+
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/selection02.png" style="width: 400px; height: 350px;"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="justify">When acceding to the configuration option, "Selection" configuration window B is
+shown.&nbsp; Fields are
+:&nbsp;&nbsp; <br>
+      <br>
+C: in this grill are show selected attribute names.&nbsp;&nbsp; <br>
+D: Type,
+shows the attributes data type. <br>
+E: verification boxes to choose
+attributes. <br>
+F: is possible to choose an class attribute making click
+on&nbsp; these fields.&nbsp;&nbsp; Information above is useful in classification
+experiments.&nbsp; <br>
+G:&nbsp; Applay button must be clicked so that
+the filter is applied.&nbsp; <br>
+      <br>
+To visualize the obtained results, we do use
+of the option view&nbsp;showing an interface like following :&nbsp;&nbsp; <br>
+
+      <br>
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/remove02.png" style="width: 400px; height: 350px;"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/remove03.png" style="width: 400px; height: 350px;"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td><br>
+Appears the vizualizacion window for filtered and non filtered data.&nbsp;&nbsp; The fields are:&nbsp;&nbsp; <br>
+
+      <br>
+
+A: Variables or names of the fields in the table.&nbsp; <br>
+
+B: Input data that initially arrived to the filter.&nbsp; <br>
+
+C:Filtered data that are the turn out after having applied the filter.&nbsp; <br>
+
+D: Number of deleted registries when applying the filter.&nbsp; <br>
+
+E: Number of registries after applying filter.&nbsp;&nbsp; 
+      </td>
+
+
+    </tr>
+
+
+  
+  
+  </tbody>
+</table>
+
+
+  
+</body>
+</html>

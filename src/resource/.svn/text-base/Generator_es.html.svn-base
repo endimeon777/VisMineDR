@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+ </head>
+  <body>
+  <table border="0" width="90%">
+    <tr>
+      <td align="center"><img src="images/help/tariykdd.gif"/></td>
+    </tr>
+    <tr>
+      <td>
+      <h1 style=" color:red;">Visor Generator</h1>
+      </td>
+    </tr>
+    <tr>
+      <td align="justify">Este visor permite la generacion de reglas dependiendo de los parametros suministrados, despues de un proceso minero de asociacion.<br><br>
+La conexion con otros componentes drag and drop, es similar en todos los visores, y se realiza como se muestra a continuacion.<br><br></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="images/help/generator01.png" style="width:400px; height:350px"/></td>
+    </tr>
+    <tr>
+      <TD align="justify">
+      <br>
+        Al liberar el icono en el &aacute;rea de trabajo A es posible conectar los iconos por medio de un hilo. Al hacer click derecho sobre el icono aparece un menu emergente, el cual consta de las siguientes opciones:<br>
+          <ul>
+          <li>La opci&oacute;n Delete, borra el algoritmo del area de trabajo.</li>
+          <li>La opci&oacute;n Configure, adapta los par&aacute;metros del algoritmo a las necesidades del analista.</li>
+          <li>La opci&oacute;n Run ejecuta la aplicaci&oacute;n del algoritmo.</li>
+          </ul>
+          La configuraci&oacute;n del visor se realiza de la siguiente manera:<br><br>
+      </td>
+    </tr>
+    <tr>
+      <td align="center"><img src="images/help/generator02.png" style="width:400px; height:350px"/></td>
+    </tr>
+    <tr>
+      <td align="justify"><br>Sobre el area de trabajo aparece una ventana B, para que el usuario  configure la confianza con la cual se van a filtrar las reglas de asociacion.<br><br>
+Para ejecutar el visor, accedemos a la opcion Run del menu contextual.<br><br></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="images/help/generator03.png" style="width:400px; height:350px"/></td>
+    </tr>
+    <tr>
+      <td><br>En el area de trabajo aparece una ventana, con las reglas obtenidas a partir de los algoritmos de Mineria de Datos de Asociacion. Al hacer click en A, la ventana de reglas desaparece y si hace click en B el usuario tiene la opcion de guardar el reporte de las reglas de asociacion.
+      </td>
+    </tr>
+  </table>
+  </body>
+</html>

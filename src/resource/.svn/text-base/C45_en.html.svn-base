@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title></title>
+</head>
+
+
+  <body>
+
+  
+<table border="0" width="90%">
+
+    <tbody>
+    <tr>
+
+      <td align="center"><img src="images/help/tariykdd.gif"></td>
+
+    </tr>
+
+    <tr>
+
+      <td>
+      
+      <h1 style="color: red;">Algoritmo C.45</h1>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="justify">C45 is an algorithm for classification. The
+Classification of data is a two steps process : First, a model is built
+based in a data set denominated training set.&nbsp; <br>
+      <br>
+In the training set, each tupla is assumed that&nbsp; belongs to a
+predefined class, determined by a&nbsp; class attribute.&nbsp;So,
+classification is supervized learning&nbsp;the rest of attributes are
+denominate attributes condition.<br>
+      <br>
+Second, the model is test with another&nbsp; data set denominated test
+set.&nbsp;&nbsp; C45 builds the tree from above downwards
+recursivelly&nbsp; using the policy divide and conquer.&nbsp;The
+algorithm uses a metric based in entropy, well-known&nbsp; like
+information gaining for tree building.&nbsp;Accuracy of the model is
+calculate according to the percentage of&nbsp; test examples that are
+correctly classified.&nbsp;Connection with other drag and drop
+components is similar&nbsp; in every single algorithm, and it gets done
+as shown below.<br>
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="center"><img src="images/help/c4501.png" style="width: 400px; height: 350px;"></td>
+
+    </tr>
+
+    <tr>
+
+      <td align="justify">
+      <br>
+When releasing the icon in the work area A. is possible to connect the
+icons&nbsp;&nbsp; by means of a thread.&nbsp;&nbsp;&nbsp;&nbsp; When doing right click on the icon
+appears an emergent menu,&nbsp;&nbsp; which consists of the following options :&nbsp;
+      <ul>
+        <li>Delete option, deletes the algorithm icon from the work area.</li>
+        <li>Configure option, adapts the parameters of the algorithm to the necessities&nbsp;of the analyst.</li>
+        <li>Run option executes the algorithm.</li>
+      </ul>
+The classification&nbsp; algorithms configuration is made&nbsp;as follows:<br>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="center"><img src="images/help/c4502.png" style="width: 400px; height: 350px;"></td>
+
+    </tr>
+
+    <tr>
+
+      <td align="justify">
+      <br>
+When acceding to the configuration option, on the work area&nbsp;
+appears a contextual menu, which is divided in two parts : one for
+parameters of Pruning and another one for stablish a training
+set.&nbsp;&nbsp; In pruning, the analyst has the possibility of
+configuring a minimum&nbsp; of registries per node and also should
+provide a threshold that&nbsp; is going to make stop the pruning of a
+certain node.&nbsp;&nbsp; The analyst also should configure the size of
+the training set.&nbsp;&nbsp; All parameters are in percentage
+terms.&nbsp; of the algorithm.&nbsp;&nbsp;&nbsp; The execution of all
+the algorithms for classification is similar,&nbsp; acceding to the Run
+option by the contextual menu.<br>
+      <br>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="center"><img src="images/help/a03.png" style="width: 400px; height: 350px;"></td>
+
+    </tr>
+
+    <tr>
+
+      <td align="justify">
+      <br>
+When executing the algorithm, its icon is changed by an animation,&nbsp;&nbsp; as
+it is in B, which indicates that the process is&nbsp;in execution. The run
+time, is proportional to the size of the data base&nbsp;and to the number
+and type of processes that this algorithm involves.<br>
+
+      </td>
+
+    </tr>
+
+  
+  </tbody>
+</table>
+
+  
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//Dtd HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>FPGrowth_en.html</title>
+</head>
+
+
+  <body>
+
+  
+<table border="0" width="90%">
+
+    <tbody>
+    <tr>
+
+      <td align="center"><img src="images/help/tariykdd.gif"></td>
+
+    </tr>
+
+    <tr>
+
+      <td>
+      
+      <h1 style="color: red;">Algoritmo FPGrowth</h1>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="justify">FPGrowth is an algorithm for association,
+uses an innovator and compact&nbsp;&nbsp; structure of data called
+Frequent Patterns Tree,&nbsp;&nbsp; which is a structure that stores
+crucial and quantitative information&nbsp;&nbsp; about the frequent
+patterns.&nbsp;&nbsp;&nbsp;&nbsp; When building the FP-tree
+(conditional) and within which&nbsp;&nbsp; is carried out
+recursivamente the mining.&nbsp;&nbsp;&nbsp;&nbsp; A frequent item set
+in any transaction always is&nbsp;&nbsp; in a path of Frequent Patterns
+trees.&nbsp;&nbsp;&nbsp;&nbsp; the technique used is searching,
+employee in the Mining&nbsp;&nbsp; and it is based in splitting, with
+the method "divide and conquer".&nbsp;&nbsp;&nbsp;&nbsp; All these
+techniques reduces searching costs
+.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Connection with other drag and
+drop components is similar&nbsp;&nbsp; in every single algorithm, and
+it gets done as shown below.<br>
+      <br>
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="center"><img src="images/help/a01.png" style="width: 400px; height: 350px;"></td>
+
+    </tr>
+
+    <tr>
+
+      <td align="justify">
+      <br>
+When releasing the icon in the work area A. is possible to connect the
+icons&nbsp;&nbsp; by means of a thread.&nbsp;&nbsp;&nbsp;&nbsp; When doing right click on the icon
+appears an emergent menu,&nbsp;&nbsp; which consists of the following options :&nbsp;
+      <ul>
+        <li>Delete option, deletes the algorithm icon from the work area.</li>
+        <li>Configure option, adapts the parameters of the algorithm to the necessities&nbsp;of the analyst.</li>
+        <li>Run option executes the algorithm.</li>
+      </ul>
+The association algorithms configuration is similar in all of them and&nbsp;gets done as follows:<br>
+      <br>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="center"><img src="images/help/a02.png" style="width: 400px; height: 350px;"></td>
+
+    </tr>
+
+    <tr>
+
+      <td align="justify">
+      <br>
+When acceding to the configuration option, on the work area&nbsp;&nbsp; appears a
+window B, so the user can configure the support&nbsp;&nbsp; for the
+algorithm.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The execution of all the algorithms for association is
+similar.&nbsp;&nbsp; We accede to the Run option from the contextual menu.<br>
+      <br>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="center"><img src="images/help/a03.png" style="width: 400px; height: 350px;"></td>
+
+    </tr>
+
+    <tr>
+
+      <td align="justify">
+      <br>
+When executing the algorithm, its icon is changed by an animation,&nbsp;&nbsp; as
+it is in B, which indicates that the process is&nbsp;in execution. The run
+time, is proportional to the size of the data base&nbsp;and to the number
+and type of processes that this algorithm involves.<br>
+      <br>
+
+      </td>
+
+    </tr>
+
+  
+  </tbody>
+</table>
+
+  
+</body>
+</html>

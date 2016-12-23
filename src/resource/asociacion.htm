@@ -1,0 +1,426 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+h1
+	{mso-style-link:"Título 1 Car";
+	margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#365F91;}
+h2
+	{mso-style-link:"Título 2 Car";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Cambria","serif";
+	color:#4F81BD;}
+h3
+	{mso-style-link:"Título 3 Car";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Cambria","serif";
+	color:#4F81BD;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+span.Ttulo1Car
+	{mso-style-name:"Título 1 Car";
+	mso-style-link:"Título 1";
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.Ttulo2Car
+	{mso-style-name:"Título 2 Car";
+	mso-style-link:"Título 2";
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	font-weight:bold;}
+span.Ttulo3Car
+	{mso-style-name:"Título 3 Car";
+	mso-style-link:"Título 3";
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	font-weight:bold;}
+.MsoChpDefault
+	{font-family:"Calibri","sans-serif";}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=ES>
+
+<div class=WordSection1>
+
+<h1><span lang=ES-CO>ETAPA DE MINERIA DE DATOS (DATA MINING)</span></h1>
+
+<p class=MsoNormal style='text-align:justify'><span lang=ES-CO>&nbsp;</span></p>
+
+<h2><a name="_Toc350719333"><span lang=ES-CO>Asociación (ASSOCIATION)</span></a></h2>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify'><span lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=ES-CO>Las asociaciones
+buscan patrones en los que la presencia de algo implica la presencia de algo
+más. Aquí se presenta a los ítems y una colección de transacciones que son
+subconjuntos de esos ítems. La tarea es encontrar relaciones entre los ítems de
+esos subconjuntos para descubrir reglas de asociación que cumplan unas
+especificaciones mínimas dadas por el usuario, expresadas en forma de <b><i>soporte</i></b>
+y <b><i>confianza.</i> </b>Estas dos medidas son las que dan validez al modelo
+de asociación.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=ES-CO>Una regla o
+patrón de asociación es una implicación de la forma X </span><span lang=ES-CO
+style='font-family:Symbol'>Þ</span><span lang=ES-CO> Y, que significa que si X
+está presente en una transacción entonces Y también está presente. El soporte
+para una regla de asociación del tipo X </span><span lang=ES-CO
+style='font-family:Symbol'>Þ</span><span lang=ES-CO> Y es la proporción (frecuencia)
+de transacciones en el conjunto de datos que contienen tanto a X como a Y (ref:
+Larose, 2004).</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=ES-CO>La confianza de
+una regla de asociación X </span><span lang=ES-CO style='font-family:Symbol'>Þ</span><span
+lang=ES-CO> Y es una medida de exactitud (fuerza de implicación) de la regla
+determinada por el porcentaje de transacciones en el conjunto de datos que
+contienen a A y B (ref: Larose, 2004).</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=ES-CO>Los algoritmos
+que contempla la herramienta para el caso de la asociación son: <b><i>Apriori,
+FPGrouth </i></b>y<b><i> EquipAsso</i></b>.</span></p>
+
+<h3><a name="_Toc350719334"><span lang=ES-CO>Apriori.</span></a><span
+lang=ES-CO>  </span></h3>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=ES-CO>Este algoritmo ejecuta todas las
+combinaciones posibles en el conjunto de datos, basándose en el conocimiento
+previo o “a priori” de los conjuntos frecuentes, esto conduce a reducir el
+espacio de búsqueda y aumentar la eficiencia.</span></p>
+
+<h3><a name="_Toc350719335"><span lang=ES-CO>FP-Growth</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span lang=ES-CO>En <span
+style='background:yellow'>ref</span> se propone un interesante método para
+minar conjuntos de datos (<i>itemsets) </i>frecuentes sin la generación de
+candidatos denominado <i>Frequent Pattern growth (FP-growth)</i>, basado en la construcción
+de un árbol denominado <i>Frequent Pattern tree (FP-tree)</i>, el cual es una extensión
+de una estructura de árbol prefija donde se almacena de manera compacta, toda la
+información cuantitativa acerca de los patrones frecuentes. La eficiencia de la
+minería se apoya en las siguientes estrategias: primero, la base de datos se
+comprime en una estructura de datos mucho más pequeña y altamente condensada,
+que evita los costos de recorrer la base de datos repetidamente. Segundo, la
+minería basada en <i>FP-tree</i> adopta un método denominado <i>pattern
+fragment growth</i> para evitar la costosa generación de un gran número de <i>itemsets</i>
+candidatos, y por último se adopta la estrategia de divide y vencerás para
+descomponer la tarea de minería de datos en un conjunto de tareas más pequeñas,
+lo cual reduce drásticamente el espacio de búsqueda.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><b><i><span lang=ES-CO>Importante:
+</span></i></b><span lang=ES-CO>Los resultados de aplicar los algoritmos de
+minería de datos se podrán observar a través de las diferentes vistas que se
+encuentran en la pestaña <b><i>Views</i></b> de la ventana principal de la
+herramienta.</span></p>
+
+<h3><a name="_Toc350719336"><span lang=ES-CO>EquipAsso</span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span lang=ES-CO>EquipAsso es
+un algoritmo que se basa en la combinación de dos primitivas del algebra
+relacional implementadas en las primitivas del SQL, pero que su fundamento es
+la matemática matricial.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><b><span lang=ES-CO
+style='font-size:18.0pt'>Importante:</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><span lang=ES-CO>En el presente
+manual se explicará el procedimiento para aplicar el algoritmo de asociación <b><i>A
+priori</i></b>, anotando que para los otros algoritmos de asociación (<b><i>FP-Growth
+y EquipAsso</i></b>) el procedimiento es similar.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;text-autospace:none'><img width=213 height=184
+src="asociacion_archivos/image001.png" align=left hspace=12></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:21.3pt;text-align:justify;
+text-indent:-21.3pt'><b><span lang=ES-CO>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><span lang=ES-CO>De la pestaña <b><i>Data mining</i></b> se
+selecciona el ícono correspondiente a <b><i>Apriori</i></b> y con clic
+sostenido se lo lleva al área <b><i>Drag and Drop.</i></b></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-align:justify'><span
+lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-indent:-21.3pt'><b><span lang=ES-CO>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><span lang=ES-CO>Una vez realizado el paso anterior se debe
+establecer la conexión con el objeto contenedor de los datos (<i>Plain text</i>,
+<i>Connection DB</i> u otro filtro).  Para esto se debe tomar con clic
+sostenido cualquiera de los 8 puntos que se encuentran alrededor del objeto de
+datos y llevarlo a cualquiera de los puntos de conexión del objeto <b><i>Apriori.</i></b></span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-indent:-21.3pt'><b><span lang=ES-CO>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><span lang=ES-CO>Ahora se debe dar clic derecho sobre el
+objeto <b><i>Apriori </i></b>y del menú de opciones que se despliega
+seleccionar la opción <b><i>Configure… </i></b>Con la cual se desplegará una
+ventana de opciones.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-indent:-21.3pt'><b><span lang=ES-CO>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><img width=182 height=83
+src="asociacion_archivos/image002.png" align=left hspace=12><span lang=ES-CO>En
+la ventana de configuración se debe establecer el nivel de soporte que tendrá
+la ejecución del algoritmo. Este es un valor entre 0 y 100%.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-indent:-21.3pt'><b><span lang=ES-CO>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><span lang=ES-CO>Luego de colocar el valor del soporte se
+dará clic en el botón <b><i>play </i></b>para dejarlo establecido y volver a la
+ventana principal.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><img width=204 height=164
+src="asociacion_archivos/image003.png" align=left hspace=12></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-indent:-21.3pt'><b><span lang=ES-CO>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><span lang=ES-CO>En la ventana principal, se tiene que hacer
+clic derecho sobre el elemento <b><i>Apriori</i></b> y del menú de opciones
+seleccionar <b><i>Run…</i></b> con lo cual se ejecutará el procedimiento de
+Asociación Apriori.</span></p>
+
+<p class=MsoListParagraphCxSpLast><span lang=ES-CO>&nbsp;</span></p>
+
+<span lang=ES-CO style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:21.3pt;text-align:justify;
+text-indent:-21.3pt'><b><span lang=ES-CO>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><img width=298 height=182
+src="asociacion_archivos/image004.png" align=left hspace=12><span lang=ES-CO>Luego
+del paso anterior se debe cambiar a la pestaña <b><i>Views</i></b> que nos
+permitirá a través de uno de sus elementos observar los resultados del algoritmo
+aplicado.  Para esto, de esta pestaña tomamos el ícono correspondiente a <b><i>Generator</i></b>
+y con un clic sostenido se lo lleva al área de <b><i>Drag and Drop.</i></b></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify'><span
+lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-indent:-21.3pt'><b><span lang=ES-CO>8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><span lang=ES-CO>Una vez realizado el paso anterior se debe
+establecer la conexión con el objeto <b><i>Apriori</i></b>. Para esto se debe tomar
+con clic sostenido cualquiera de los 8 puntos que se encuentran alrededor del
+objeto de datos y llevarlo a cualquiera de los puntos de conexión del elemento <b><i>Generator.</i></b></span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-indent:-21.3pt'><b><span lang=ES-CO>9.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><span lang=ES-CO>Ahora se debe dar clic derecho sobre el
+objeto <b><i>Generator</i></b> y del menú de opciones que se despliega
+seleccionar la opción <b><i>Configure…</i></b> con la cual se desplegará una
+ventana de opciones.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-indent:-21.3pt'><b><span lang=ES-CO>10.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><img width=206 height=83
+src="asociacion_archivos/image005.png" align=left hspace=12><span lang=ES-CO> Esta
+vez en la ventana de opciones que se presenta se debe seleccionar el porcentaje
+de Confianza que se aplicará al modelo.  El rango para este nivel es de 0 a
+100%.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-indent:-21.3pt'><b><span lang=ES-CO>11.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><span lang=ES-CO> Luego de lo anterior se debe dar clic en el
+botón <b><i>play</i></b> de la ventana para que quede establecida la confianza
+y volver a la ventana principal.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify'><span
+lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><img width=289 height=115
+src="asociacion_archivos/image006.png" align=left hspace=12></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-indent:-21.3pt'><b><span lang=ES-CO>12.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><span lang=ES-CO> Nuevamente en la ventana principal se debe
+dar clic derecho sobre el elemento <b><i>Generator</i></b> y seleccionar la
+opción <b><i>View…</i></b> del menú que se despliega.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpLast><span lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:21.3pt;text-align:justify'><span
+lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify;
+text-indent:-21.3pt'><b><span lang=ES-CO>13.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=3 height=0></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td><img width=426 height=360 src="asociacion_archivos/image007.png"></td>
+ </tr>
+</table>
+
+<br clear=ALL>
+<span lang=ES-CO>En la ventana que se despliega se informa los resultados
+obtenidos. Se muestra el algoritmo de asociación que se aplicó, el nivel de
+soporte y confianza que estableció y más abajo en una tabla se presentan el
+conjunto de reglas que se encontraron en el conjunto de datos luego de aplicado
+el algoritmo.  Al lado de cada regla encontrada se informa el porcentaje de
+confianza que tiene la regla a nivel individual.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:21.3pt;text-align:justify'><span
+lang=ES-CO>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:21.3pt;text-align:justify;
+text-indent:-21.3pt'><b><span lang=ES-CO>14.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><span lang=ES-CO>Mediante el botón <b><i>Save Report</i></b>
+es posible guardar el conjunto de reglas encontrado.</span></p>
+
+<p class=MsoNormal><span lang=ES-CO>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

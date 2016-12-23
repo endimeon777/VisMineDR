@@ -1,0 +1,15 @@
+estado	temperatura	humedad	viento	jtenis 
+Soleado	Caliente	Alta	Debil	no
+Soleado	Caliente	Alta	Fuerte	no
+Nublado	Caliente	Alta	Debil	si
+Lluvioso	Templado	Alta	Debil	si
+Lluvioso	Fresco	Normal	Debil	si
+Lluvioso	Fresco	Normal	Fuerte	no
+Nublado	Fresco	Normal	Fuerte	si
+Soleado	Templado	Alta	Debil	no
+Soleado	Fresco	Normal	Debil	si
+Lluvioso	Templado	Normal	Debil	si
+Soleado	Templado	Normal	Fuerte	si
+Nublado	Templado	Alta	Fuerte	si
+Nublado	Caliente	Normal	Debil	si
+Lluvioso	Templado	Alta	Fuerte	no

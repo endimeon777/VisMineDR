@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+ </head>
+  <body>
+  <table border="0" width="90%">
+    <tr>
+      <td align="center"><img src="images/help/tariykdd.gif"/></td>
+    </tr>
+    <tr>
+      <td>
+      <h1 style=" color:red;">Algoritmo C.45</h1>
+      </td>
+    </tr>
+    <tr>
+      <td align="justify">C.45 es un algoritmo de Clasificacion. La Clasificacion de datos es un proceso de dos pasos:<br><br>
+En el primero, se construye un modelo con base en un conjunto de datos  denominado conjunto de entrenamiento. En el conjunto de entrenamiento, cada tupla se asume que pertenece a una clase predefinida, determinada por un atributo clase. Por esto, la clasificacion es un aprendizaje supervizado. El resto de atributos se denominan atributos condicion.<br><br>
+En el segundo, el modelo inicialmente se prueba con otro conjunto de datos denominado conjunto de prueba. C.45 construye el arbol de arriba hacia abajo recursivamente utilizando la manera de &quot;divide y conquistaras&quot;. El algoritmo usa una metrica basada en la entropia , conocida como ganancia de informacion para construir el arbol. La exactitud del modelo se calcula de acuerdo al porcentaje de ejemplos de prueba que son correctamente clasificados. La conexion con otros componentes drag and drop, es similar en todos los algoritmos, y se realiza como se muestra a continuacion.<br><br></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="images/help/c4501.png" style="width:400px; height:350px"/></td>
+    </tr>
+    <tr>
+      <TD align="justify">
+      <br>
+        Al liberar el icono del area A en el area de trabajo B. es posible conectar los iconos
+por medio de un hilo. Al hacer click derecho sobre el icono aparece un menu emergente, el cual consta de las siguientes opciones:<br>
+          <ul>
+          <li>La opci&oacute;n Delete, borra el algoritmo del area de trabajo.</li>
+          <li>La opci&oacute;n Configure, adapta los par&aacute;metros del algoritmo a las necesidades del analista.</li>
+          <li>La opci&oacute;n Run ejecuta la aplicaci&oacute;n del algoritmo.</li>
+          </ul>
+          La configuracion del algoritmo es similar en todos los algoritmos de 
+Clasificacion, se realiza de la siguiente manera:<br><br>
+      </td>
+    </tr>
+    <tr>
+      <td align="center"><img src="images/help/c4502.png" style="width:400px; height:350px"/></td>
+    </tr>
+    <tr>
+      <td align="justify">
+      <br>
+      Al acceder a la opcion de configuracion, sobre el area de trabajo aparece un menu contextual, el cual se divide en dos partes: una para parametros de Pruning o poda y otra para Training Set o conjunto de entrenamiento. En pruning el analista tiene la posibilidad de configurar un minimo de registros por nodo y tambien debera suministrar un umbral que permitira detener la poda de un nodo determinado. El analista debera tambien brindar el tama&ntilde;o del conjunto de entrenamiento. Todos los parametros estan en terminos de porcentaje del algoritmo. La ejecucion de todos los algoritmos es similar, accediendo a la opcion Run del menu contextual.<br><br>
+      </td>
+    </tr>
+    <tr>
+      <td align="center"><img src="images/help/a03.png" style="width:400px; height:350px"/></td>
+    </tr>
+    <tr>
+      <td align="justify">
+      <br>
+      Al ejecutar el algoritmo, su icono cambiara por una animacion, asi como se muestra en B, lo cual indica que el proceso esta en ejecucion. El tiempo de ejecucion, es proporcional al tam&ntilde;o de la base de datos y al numero y tipo de  procesos que dicho algoritmo involucre.<br><br>
+      </td>
+    </tr>
+  </table>
+  </body>
+</html>

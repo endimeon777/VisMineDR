@@ -1,0 +1,16 @@
+J48 pruned tree
+------------------
+
+petalwidth <= 6: Iris-setosa (50.0)
+petalwidth > 6
+|   petalwidth <= 17
+|   |   petallength <= 49: Iris-versicolor (48.0/1.0)
+|   |   petallength > 49
+|   |   |   petalwidth <= 15: Iris-virginica (3.0)
+|   |   |   petalwidth > 15: Iris-versicolor (3.0/1.0)
+|   petalwidth > 17: Iris-virginica (46.0/1.0)
+
+Number of Leaves  : 	5
+
+Size of the tree : 	9
+

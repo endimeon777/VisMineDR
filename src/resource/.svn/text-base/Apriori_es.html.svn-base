@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+ </head>
+  <body>
+  <table border="0" width="90%">
+    <tr>
+      <td align="center"><img src="images/help/tariykdd.gif"/></td>
+    </tr>
+    <tr>
+      <td>
+      <h1 style=" color:red;">Algoritmo Apriori</h1>
+      </td>
+    </tr>
+    <tr>
+      <td align="justify">Apriori es un algoritmo de asociaci&oacute;n que funciona de la siguiente forma:<br><br> La primera pasada del algoritmo cuenta las ocurrencias de los items en todo el conjunto de datos para determinar los itemsets frecuentes 1. Los subsecuentes pasos del algoritmo son basicamente dos, primero, los itemsets frecuentes Lk-1 encontrados en la pasada (k-1) son usados para generar los itemsets candidatos Ck. Y segundo se cuenta el soporte de los itemsets candidatos Ck a traves de un nuevo recorrido a la base de datos. Se realiza el mismo proceso hasta que no se encuentren mas itemsets frecuentes. La conexion con otros componentes drag and drop, es similar en todos los algoritmos, y se realiza como se muestra a continuacion.<br><br></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="images/help/a01.png" style="width:400px; height:350px"/></td>
+    </tr>
+    <tr>
+      <TD align="justify">
+      <br>
+        Al liberar el icono en el &aacute;rea de trabajo A. es posible conectar los iconos por medio de un hilo. Al hacer click derecho sobre el icono aparece un menu emergente, el cual consta de las siguientes opciones:<br>
+          <ul>
+          <li>La opci&oacute;n Delete, borra el algoritmo del area de trabajo.</li>
+          <li>La opci&oacute;n Configure, adapta los par&aacute;metros del algoritmo a las necesidades del analista.</li>
+          <li>La opci&oacute;n Run ejecuta la aplicaci&oacute;n del algoritmo.</li>
+          </ul>
+          La configuraci&oacute;n del algoritmo se realiza de la siguiente manera:<br><br>
+      </td>
+    </tr>
+    <tr>
+      <td align="center"><img src="images/help/a02.png" style="width:400px; height:350px"/></td>
+    </tr>
+    <tr>
+      <td align="justify">
+      <br>
+      Al acceder a la opci&oacute;n de configuraci&oacute;n, sobre el &aacute;rea de trabajo aparece una ventana B, para que el usuario configure el soporte del algoritmo. Para ejecutar el algoritmo, accedemos a la opci&oacute;n Run del menu contextual.<br><br>
+      </td>
+    </tr>
+    <tr>
+      <td align="center"><img src="images/help/a03.png" style="width:400px; height:350px"/></td>
+    </tr>
+    <tr>
+      <td align="justify">
+      <br>
+      Al ejecutar el algoritmo, su icono cambiara por una animaci&oacute;n, as&iacute; como se muestra en B, lo cual indica que el proceso esta en ejecuci&oacute;n. El tiempo de ejecuci&oacute;n, es proporcional al tam&ntilde;o de la base de datos y al n&uacute;mero y tipo de  procesos que dicho algoritmo involucre.<br><br>
+      </td>
+    </tr>
+  </table>
+  </body>
+</html>

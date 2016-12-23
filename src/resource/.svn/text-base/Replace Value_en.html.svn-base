@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title></title>
+</head>
+
+
+<body>
+
+
+  
+<table border="0" width="90%">
+
+
+    <tbody>
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/tariykdd.gif"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td>
+      
+      
+      <h1 style="color: red;">Filtro Replace Value</h1>
+
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="justify">This filter replace one or several
+values&nbsp; of a selected attribute by another value provided by the
+analyst.&nbsp;&nbsp; Connection with other drag and drop components is
+similar&nbsp; in every filter, and it is made as next. <br>
+      <br>
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/remove01.png" style="width: 400px; height: 350px;"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="justify">
+      <br>
+
+When releasing the icon on the work area A. is possible to connect the
+icons&nbsp;through a thread B.&nbsp;&nbsp; When&nbsp; pressing right button on the icon, an
+emergent menu C appears ,&nbsp; which consists of the following options: <br>
+
+      
+      <ul>
+        <li>Delete option, deletes the filter from the work area.&nbsp;&nbsp;&nbsp;</li>
+        <li>Run option, executes the filter.&nbsp;&nbsp;&nbsp;</li>
+        <li>Configuration option, adapts the filter parameters to the analyst&nbsp; necessities.</li>
+        <li>View option shows the data vizualizacion window.&nbsp;&nbsp;&nbsp;&nbsp;</li>
+      </ul>
+
+Configuration of the filter, is made as follows:<br>
+
+      <br>
+
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/replace01.png" style="width: 400px; height: 350px;"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="justify">"Replace value" configuration window B&nbsp; is shown. Fields are:<br>
+      <br>
+Attribute, in which the name of the attribute is chosen to look for in the data set.&nbsp; <br>
+Replace with, the new value of the attribute is written here.&nbsp; <br>
+Apply : it executes the filter<br>
+      <br>
+To visualize the obtained results, we do use of the option view&nbsp; showing an interface like following:&nbsp;&nbsp; <br>
+      <br>
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/remove02.png" style="width: 400px; height: 350px;"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/remove03.png" style="width: 400px; height: 350px;"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td><br>
+Appears the vizualizacion window for filtered and non filtered data.&nbsp;&nbsp; The fields are:&nbsp;&nbsp; <br>
+
+      <br>
+
+A: Variables or names of the fields in the table.&nbsp; <br>
+
+B: Input data that initially arrived to the filter.&nbsp; <br>
+
+C:Filtered data that are the turn out after having applied the filter.&nbsp; <br>
+
+D: Number of deleted registries when applying the filter.&nbsp; <br>
+
+E: Number of registries after applying filter.&nbsp;&nbsp; 
+      </td>
+
+
+    </tr>
+
+
+  
+  
+  </tbody>
+</table>
+
+
+  
+</body>
+</html>

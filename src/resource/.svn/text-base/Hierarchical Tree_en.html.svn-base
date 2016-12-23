@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+  
+  <title></title>
+</head>
+
+
+<body>
+
+
+  
+<table border="0" width="90%">
+
+
+    <tbody>
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/tariykdd.gif"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td>
+      
+      
+      <h1 style="color: red;">View Hierarchical Tree</h1>
+
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="justify">The window that contains a hierarchical
+tree is displayed after a Classification algorithm gets done.&nbsp; It
+is useful for tree navigation.&nbsp;&nbsp; Connection with other drag
+and drop components is similar&nbsp; in every viewer, and it is made as
+next.<br>
+
+      <br>
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/hierarchical01.png" style="width: 400px; height: 350px;"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="justify">
+      <br>
+
+
+      When releasing the icon on the work
+area A. is possible to connect the icons&nbsp;through a thread
+B.&nbsp;When&nbsp; pressing right button on the icon, an emergent menu
+C appears ,&nbsp; which consists of the following options:&nbsp; <br>
+
+
+      
+      
+      <ul>
+
+        <li>Delete option, deletes the filter from the work area. </li>
+
+        <li>Run option, executes the filter. </li>
+
+        <li>View option shows the data vizualizacion window. </li>
+
+      
+      </ul>
+
+      <br>
+
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/hierarchical02.png" style="width: 400px; height: 350px;"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/hierarchical03.png" style="width: 400px; height: 350px;"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="justify">The Hierarchical tree is shown above. Fields of this window are:&nbsp; <br>
+
+      <br>
+
+A, tree area.&nbsp; <br>
+
+B, expand or collapse tree buttons.&nbsp; <br>
+
+C, tabbed panel to see rules gotten from the tree.<br>
+
+D, error percent of the tree.&nbsp;&nbsp; <br>
+
+      <br>
+
+Rules visualization:<br>
+
+      <br>
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="center"><img src="images/help/hierarchical04.png" style="width: 400px; height: 350px;"></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td align="justify"><br>
+Rules generated from the tree are shown. This list can be sort by the
+column name. The list is sort upwards or downwards according to the
+case. </td>
+
+
+    </tr>
+
+
+  
+  
+  </tbody>
+</table>
+
+
+  
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title></title>
+</head>
+
+
+  <body>
+
+  
+<table border="0" width="90%">
+
+    <tbody>
+    <tr>
+
+      <td align="center"><img src="images/help/tariykdd.gif"></td>
+
+    </tr>
+
+    <tr>
+
+      <td>
+      
+      <h1 style="color: red;">View Prediction</h1>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="justify">This viewer lets predict the class value an
+attribute value belongs to.&nbsp; Its fundation is the obtained
+decision tree&nbsp;gotten after an algorithm for clasification been
+aplayed&nbsp; to the data collected from the connection with a data
+base or a text file.&nbsp;Connection with other drag and drop
+components is made&nbsp;&nbsp; with two specific modules which are :
+algorithms for classification and connection icons that can be a data
+base or&nbsp; text files with extension .arf and .csv<br>
+      <br>
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="center"><img src="images/help/prediction01.png" style="width: 400px; height: 350px;"></td>
+
+    </tr>
+
+    <tr>
+
+      <td align="justify">
+      Prediction icon D appears in the
+work area.&nbsp; Usaje of this component is conditionated to
+following&nbsp; requirements.&nbsp; <br>
+      <br>
+A training data set must have been loaded A,&nbsp;&nbsp; an algorithm
+for clasification B must be applied to A&nbsp; and a testing data set C
+must had have been loaded to&nbsp; apply the obtained model after B get
+done. <br>
+      <br>
+Information coming from A and B feeds&nbsp; the icon D this way, is
+possible to do prediction on the testing data set C.&nbsp;&nbsp; <br>
+      <br>
+Gotten data appears in a window&nbsp;&nbsp;as following :<br>
+      <br>
+      <br>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td align="center"><img src="images/help/prediction02.png" style="width: 400px; height: 350px;"></td>
+
+    </tr>
+
+  
+  </tbody>
+</table>
+
+  
+</body>
+</html>

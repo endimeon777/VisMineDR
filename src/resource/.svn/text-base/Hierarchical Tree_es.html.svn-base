@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+ </head>
+  <body>
+  <table border="0" width="90%">
+    <tr>
+      <td align="center"><img src="images/help/tariykdd.gif"/></td>
+    </tr>
+    <tr>
+      <td>
+      <h1 style=" color:red;">Visor Hierarchical Tree</h1>
+      </td>
+    </tr>
+    <tr>
+      <td align="justify">Este tipo de visor, permite generar un arbol jerarquico de desicion apartir de un proceso minero de Clasificacion. Es muy util para visualizar el arbol por secciones.<br><br>
+La conexion con otros componentes drag and drop, es similar en todos los visores, y se realiza como se muestra a continuacion<br><br></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="images/help/hierarchical01.png" style="width:400px; height:350px"/></td>
+    </tr>
+    <tr>
+      <TD align="justify">
+      <br>
+        Al liberar el icono en el &aacute;rea de trabajo A es posible conectar los iconos por medio de un hilo. Al hacer click derecho sobre el icono aparece un menu emergente, el cual consta de las siguientes opciones:<br>
+          <ul>
+          <li>La opci&oacute;n Delete, borra el algoritmo del area de trabajo.</li>
+          <li>La opci&oacute;n Configure, adapta los par&aacute;metros del algoritmo a las necesidades del analista.</li>
+          <li>La opci&oacute;n Run ejecuta la aplicaci&oacute;n del algoritmo.</li>
+          <li>La opcion View despliega la ventana que permite visualizar tanto el arbol como  las reglas generadas. Sus detalles se explican a continuacion.</li>
+          </ul>
+          Visualizacion del arbol jerarquico colapsado:<br><br>
+      </td>
+    </tr>
+    <tr>
+      <td align="center"><img src="images/help/hierarchical02.png" style="width:400px; height:350px"/></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="images/help/hierarchical03.png" style="width:400px; height:350px"/></td>
+    </tr>
+    <tr>
+      <td align="justify"><br>El anterior es el arbol jerarquico. Los campos de esta ventana son:<br><br>
+A area del arbol.<br>
+B botones para expandir o colapsar el arbol.<br>
+C pesta&ntilde;a para visualizar las reglas generadas a partir del arbol.<br>
+D porcentaje de error del arbol.<br><br>
+Visualizacion de las reglas a partir de dicho arbol.<br><br></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="images/help/hierarchical04.png" style="width:400px; height:350px"/></td>
+    </tr>
+    <tr>
+      <td align="justify"><br>Las reglas generadas a partir del arbol son mostradas. Esta lista puede ser ordenada de acuerdo a la columna. La lista se ordena de mayor a menor o viceversa teniendo como criterio dicha columna.
+      </td>
+    </tr>
+  </table>
+  </body>
+</html>
