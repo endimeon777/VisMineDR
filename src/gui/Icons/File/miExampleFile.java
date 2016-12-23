@@ -109,6 +109,7 @@ public class miExampleFile extends javax.swing.JFrame implements Serializable{
         jMenuItem13 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
         jMenuItem14 = new javax.swing.JMenuItem();
+        jMenuItem33 = new javax.swing.JMenuItem();
         jMenuItem15 = new javax.swing.JMenuItem();
         jMenuItem16 = new javax.swing.JMenuItem();
         jMenuItem17 = new javax.swing.JMenuItem();
@@ -314,7 +315,15 @@ public class miExampleFile extends javax.swing.JFrame implements Serializable{
         });
         jMenu4.add(jMenuItem14);
 
-        jMenuItem15.setText("Swissroll");
+        jMenuItem33.setText("Swissroll1k");
+        jMenuItem33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem33ActionPerformed(evt);
+            }
+        });
+        jMenu4.add(jMenuItem33);
+
+        jMenuItem15.setText("Swissroll20k");
         jMenuItem15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem15ActionPerformed(evt);
@@ -558,7 +567,7 @@ public class miExampleFile extends javax.swing.JFrame implements Serializable{
     }//GEN-LAST:event_jMenuItem14ActionPerformed
 
     private void jMenuItem15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem15ActionPerformed
-       setDataset("MIswissroll");
+       setDataset("Swissroll20k");
     }//GEN-LAST:event_jMenuItem15ActionPerformed
 
     private void jMenuItem22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem22ActionPerformed
@@ -608,6 +617,10 @@ public class miExampleFile extends javax.swing.JFrame implements Serializable{
     private void jMenuItem29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem29ActionPerformed
         setDataset("gdp"); 
     }//GEN-LAST:event_jMenuItem29ActionPerformed
+
+    private void jMenuItem33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem33ActionPerformed
+        setDataset("swissroll1k"); 
+    }//GEN-LAST:event_jMenuItem33ActionPerformed
 
     public FileTableModel getTableModel(){
         return model;
@@ -668,8 +681,8 @@ public class miExampleFile extends javax.swing.JFrame implements Serializable{
             filePath = "src/datasets/manifold/face.csv";  
             break;
             
-            case "MIswissroll":
-            filePath = "src/datasets/manifold/MIswissroll.csv";  
+            case "Swissroll20k":
+            filePath = "src/datasets/manifold/swissroll20k.csv";  
             break;  
             
             case "test":
@@ -718,6 +731,10 @@ public class miExampleFile extends javax.swing.JFrame implements Serializable{
             
             case "gdp":
             filePath = "src/datasets/regresion/gdp.csv";  
+            break;
+            
+            case "swissroll1k":
+            filePath = "src/datasets/manifold/swissRoll1k.csv"; 
             break;
             
             default:
@@ -784,6 +801,7 @@ public class miExampleFile extends javax.swing.JFrame implements Serializable{
     private javax.swing.JMenuItem jMenuItem30;
     private javax.swing.JMenuItem jMenuItem31;
     private javax.swing.JMenuItem jMenuItem32;
+    private javax.swing.JMenuItem jMenuItem33;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;

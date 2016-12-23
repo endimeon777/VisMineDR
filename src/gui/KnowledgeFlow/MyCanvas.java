@@ -1280,7 +1280,6 @@ public class MyCanvas extends javax.swing.JPanel implements DropTargetListener {
                                               ((DRIcon) to).getMnuConfigure().setEnabled(true);  
                                             }
                                             
-                                            ((DRIcon) to).getMnuConfigure().setEnabled(true);
                                             nuevopressed.seleccionado = true;
                                             conexiones.add(new Conexion(conectorpressed, nuevopressed));
                                             conectorpressed = null;
