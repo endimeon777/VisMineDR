@@ -266,7 +266,7 @@ public class ScatterIcon extends Icon{
                 plot.points(y, pointLegend); 
             }else if(selPoint=="RGB"){ // la definicion de colores RGB tiene que ser explicita en la tabla de datos
                 // forma 3: en blanco y negro
-               for (int i = 0; i < y.length; i++) {
+               for (int i = 0; i < y.length; i++) { 
                     
                     String strDatos= etiquetas[i];
                     StringTokenizer tokens = new StringTokenizer(strDatos, "*");
