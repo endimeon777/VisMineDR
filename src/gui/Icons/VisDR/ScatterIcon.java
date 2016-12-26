@@ -29,6 +29,7 @@ import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.StringTokenizer;
 import java.util.Vector;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -158,7 +159,8 @@ public class ScatterIcon extends Icon{
                 }else if(algorithm.equals("LLE") || algorithm.equals("LE")){
                     cVisLle.updateIcon(icon);
                     cVisLle.setVisible(true);
-                } else if(algorithm.equals("KPCA") || algorithm.equals("conEtiquetas")){
+                    
+                } else if(algorithm.equals("KPCA") || algorithm.equals("conEtiquetas")){ 
                     cVisKpca.updateIcon(icon);
                     cVisKpca.setVisible(true);
                 }
@@ -191,7 +193,10 @@ public class ScatterIcon extends Icon{
             mensaje = ("Plain Text");
             title = "Original Data";
 
-        }else if(algorithm.equals("conEtiquetas")){ // datos originales
+        // conEtiqueteas se utiliza cuando se conecta directamente el scater a 
+        //la fuente de datos, es decir, no se aplico ningun metodo, pero si se 
+        //selecciono un atributo label
+        }else if(algorithm.equals("conEtiquetas")){ 
             y = dataIn;
             mensaje = ("Filters");
             title = "Original Data";
@@ -233,8 +238,8 @@ public class ScatterIcon extends Icon{
         plot = new PlotCanvas(Utils.MachineLearning.math.math.Math.colMin(y), Utils.MachineLearning.math.math.Math.colMax(y));
         
         char pointLegend;
-        if (dataIn.length < 500) {
-                pointLegend = 'o';
+        if (dataIn.length < 2000) {
+                pointLegend = '*';
         } else {
                 pointLegend = '.';
         }
@@ -259,6 +264,29 @@ public class ScatterIcon extends Icon{
             }else if(selPoint=="Black"){
                 // forma 3: en blanco y negro
                 plot.points(y, pointLegend); 
+            }else if(selPoint=="RGB"){ // la definicion de colores RGB tiene que ser explicita en la tabla de datos
+                // forma 3: en blanco y negro
+               for (int i = 0; i < y.length; i++) {
+                   
+                    String strDatos= etiquetas[i];
+                    StringTokenizer tokens = new StringTokenizer(strDatos, "*");
+                    
+                    //Es neceario saber si la cadena se parte en 3 partes(RGB) utilizando el token *
+                    // si la cadena no esta dividida en 3 partes significa que no tiene el formato 100*100*100
+                    if(tokens.countTokens()==3){
+                        Integer[] datos = new Integer[3];
+                        int c=0;
+                        while(tokens.hasMoreTokens()){
+                            String str = tokens.nextToken();
+                            datos[c] = Integer.valueOf(str);
+                            c++;
+                        }
+                        plot.point(pointLegend, new Color(datos[0], datos[1], datos[2]), y[i]);
+                    }else{
+                        JOptionPane.showMessageDialog(this, "The data format is not compatible with the RGB format of VisMineDR: 100 * 100 * 100", "VisMineDR", JOptionPane.ERROR_MESSAGE);
+                        break;
+                    } 
+                }
             }
         }
         
