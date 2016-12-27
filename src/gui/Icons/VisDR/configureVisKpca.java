@@ -14,6 +14,7 @@ import gui.Icons.Association.*;
 import gui.KnowledgeFlow.ChooserEscritorio;
 import java.text.NumberFormat;
 import java.util.Locale;
+import javax.swing.JComboBox;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.text.DefaultFormatterFactory;
 import javax.swing.text.NumberFormatter;
@@ -46,6 +47,7 @@ public class configureVisKpca extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        cmbSelLabel = new javax.swing.JComboBox<>();
         cmbSelPoint = new javax.swing.JComboBox<>();
         btnAccept = new javax.swing.JButton();
 
@@ -55,7 +57,19 @@ public class configureVisKpca extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Configure", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 12))); // NOI18N
 
-        cmbSelPoint.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Nominal", "Colour", "Black" }));
+        cmbSelLabel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Nominal", "Colour", "Black", "RGB" }));
+        cmbSelLabel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbSelLabelActionPerformed(evt);
+            }
+        });
+
+        cmbSelPoint.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { ".", "o", "*", "+" }));
+        cmbSelPoint.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbSelPointActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -63,13 +77,17 @@ public class configureVisKpca extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(cmbSelPoint, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(cmbSelLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cmbSelPoint, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
+                .addComponent(cmbSelLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(cmbSelPoint, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -100,26 +118,47 @@ public class configureVisKpca extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(btnAccept)))
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnAccept)
+                .addGap(33, 33, 33))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    public JComboBox getCmbPoint(){
+        return cmbSelLabel; 
+    }
+    
     private void btnAcceptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAcceptActionPerformed
         // TODO add your handling code here:
-        String selPoint = cmbSelPoint.getSelectedItem().toString();
-        sct.selPoint = selPoint;
+        String selLabel = cmbSelLabel.getSelectedItem().toString();
+        sct.selLabel = selLabel;
+        
+        String cadSelPoint = cmbSelPoint.getSelectedItem().toString();
+        char cad[] = cadSelPoint.toCharArray(); 
+        sct.selPoint = cad[0];
+        
         sct.getMnuRun().setEnabled(true);
         this.dispose();
 }//GEN-LAST:event_btnAcceptActionPerformed
+
+    private void cmbSelLabelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbSelLabelActionPerformed
+        String selLabel = cmbSelLabel.getSelectedItem().toString();
+        if(selLabel.equals("Nominal")){
+            cmbSelPoint.setEnabled(false);
+        }else{
+            cmbSelPoint.setEnabled(true);
+        }
+    }//GEN-LAST:event_cmbSelLabelActionPerformed
+
+    private void cmbSelPointActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbSelPointActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbSelPointActionPerformed
 
     /**
      * @param args the command line arguments
@@ -134,6 +173,7 @@ public class configureVisKpca extends javax.swing.JFrame {
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAccept;
+    private javax.swing.JComboBox<String> cmbSelLabel;
     private javax.swing.JComboBox<String> cmbSelPoint;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
