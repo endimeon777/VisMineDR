@@ -130,6 +130,7 @@ public class miExampleFile extends javax.swing.JFrame implements Serializable{
         jMenuItem26 = new javax.swing.JMenuItem();
         jMenuItem27 = new javax.swing.JMenuItem();
         jMenuItem28 = new javax.swing.JMenuItem();
+        jMenuItem34 = new javax.swing.JMenuItem();
         jMenu7 = new javax.swing.JMenu();
         jMenuItem29 = new javax.swing.JMenuItem();
         jMenu8 = new javax.swing.JMenu();
@@ -332,15 +333,30 @@ public class miExampleFile extends javax.swing.JFrame implements Serializable{
         jMenu4.add(jMenuItem15);
 
         jMenuItem16.setText("Sphere");
+        jMenuItem16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem16ActionPerformed(evt);
+            }
+        });
         jMenu4.add(jMenuItem16);
 
-        jMenuItem17.setText("Coil20");
+        jMenuItem17.setText("SphereLabel");
+        jMenuItem17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem17ActionPerformed(evt);
+            }
+        });
         jMenu4.add(jMenuItem17);
 
         jMenuItem18.setText("Mnist");
         jMenu4.add(jMenuItem18);
 
         jMenuItem19.setText("Toroidal");
+        jMenuItem19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem19ActionPerformed(evt);
+            }
+        });
         jMenu4.add(jMenuItem19);
 
         jMenuBar1.add(jMenu4);
@@ -446,6 +462,14 @@ public class miExampleFile extends javax.swing.JFrame implements Serializable{
             }
         });
         jMenu6.add(jMenuItem28);
+
+        jMenuItem34.setText("Colombia");
+        jMenuItem34.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem34ActionPerformed(evt);
+            }
+        });
+        jMenu6.add(jMenuItem34);
 
         jMenuBar1.add(jMenu6);
 
@@ -622,6 +646,22 @@ public class miExampleFile extends javax.swing.JFrame implements Serializable{
         setDataset("swissroll1k"); 
     }//GEN-LAST:event_jMenuItem33ActionPerformed
 
+    private void jMenuItem16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem16ActionPerformed
+        setDataset("sphere");
+    }//GEN-LAST:event_jMenuItem16ActionPerformed
+
+    private void jMenuItem17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem17ActionPerformed
+        setDataset("spherelabel");
+    }//GEN-LAST:event_jMenuItem17ActionPerformed
+
+    private void jMenuItem19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem19ActionPerformed
+        setDataset("toroide");
+    }//GEN-LAST:event_jMenuItem19ActionPerformed
+
+    private void jMenuItem34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem34ActionPerformed
+        setDataset("colombia");
+    }//GEN-LAST:event_jMenuItem34ActionPerformed
+
     public FileTableModel getTableModel(){
         return model;
     } 
@@ -737,6 +777,22 @@ public class miExampleFile extends javax.swing.JFrame implements Serializable{
             filePath = "src/datasets/manifold/swissRoll1k.csv"; 
             break;
             
+            case "sphere":
+            filePath = "src/datasets/manifold/sphere.csv"; 
+            break;
+            
+            case "spherelabel":
+            filePath = "src/datasets/manifold/SphereLabel.csv"; 
+            break;
+            
+            case "toroide":
+            filePath = "src/datasets/manifold/toroide.csv"; 
+            break;
+            
+            case "colombia":
+            filePath = "src/datasets/projection/colombia.csv"; 
+            break;
+             
             default:
             filePath = "src/datasets/classification/iris.csv";
             break;
@@ -802,6 +858,7 @@ public class miExampleFile extends javax.swing.JFrame implements Serializable{
     private javax.swing.JMenuItem jMenuItem31;
     private javax.swing.JMenuItem jMenuItem32;
     private javax.swing.JMenuItem jMenuItem33;
+    private javax.swing.JMenuItem jMenuItem34;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
