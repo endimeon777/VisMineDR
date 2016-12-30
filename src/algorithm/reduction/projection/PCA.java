@@ -164,7 +164,7 @@ public class PCA implements Projection<double[]> {
                     }
                 }
             }
-
+ 
             EigenValueDecomposition eigen = EigenValueDecomposition.decompose(cov, true);
 
             double[][] loadings = eigen.getEigenVectors();
