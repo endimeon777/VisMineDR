@@ -75,6 +75,7 @@ import Utils.MachineLearning.plot.swing.Button;
 import Utils.MachineLearning.plot.swing.FileChooser;
 import Utils.MachineLearning.plot.swing.Printer;
 import Utils.MachineLearning.plot.swing.Table;
+import javax.swing.table.AbstractTableModel;
 
 /**
  * Canvas for mathematical plots.
@@ -157,6 +158,12 @@ public class PlotCanvas extends JPanel {
     /**
      * The real canvas for plotting.
      */
+    
+    /**
+     * Datos de la leyenda cuando las etiquetas llegan en colores
+     */
+    private AbstractTableModel dataLegend;
+            
     private class MathCanvas extends JComponent implements Printable, ComponentListener, MouseListener, MouseMotionListener, MouseWheelListener, ActionListener {
         /**
          * If the mouse double clicked.
@@ -687,7 +694,7 @@ public class PlotCanvas extends JPanel {
 
         public PrintAction() {
 //            super("Print", new ImageIcon(PlotCanvas.class.getResource("images/print16.png")));
-            super("Save", new javax.swing.ImageIcon(PlotCanvas.class.getResource("/images/machine/print16.png")));
+            super("Print", new javax.swing.ImageIcon(PlotCanvas.class.getResource("/images/machine/print16.png")));
         }
 
         @Override
@@ -700,7 +707,7 @@ public class PlotCanvas extends JPanel {
 
         public ZoomInAction() {
 //            super("Zoom In", new ImageIcon(PlotCanvas.class.getResource("images/zoom-in16.png")));
-            super("Save", new javax.swing.ImageIcon(PlotCanvas.class.getResource("/images/machine/zoom-in16.png")));
+            super("Zoom-in", new javax.swing.ImageIcon(PlotCanvas.class.getResource("/images/machine/zoom-in16.png")));
         }
 
         @Override
@@ -713,7 +720,7 @@ public class PlotCanvas extends JPanel {
 
         public ZoomOutAction() {
 //            super("Zoom Out", new ImageIcon(PlotCanvas.class.getResource("images/zoom-out16.png")));
-            super("Save", new javax.swing.ImageIcon(PlotCanvas.class.getResource("/images/machine/zoom-out16.png")));
+            super("Zoom-out", new javax.swing.ImageIcon(PlotCanvas.class.getResource("/images/machine/zoom-out16.png")));
         }
 
         @Override
@@ -726,7 +733,7 @@ public class PlotCanvas extends JPanel {
 
         public ResetAction() {
 //            super("Reset", new ImageIcon(PlotCanvas.class.getResource("images/refresh16.png")));
-            super("Save", new javax.swing.ImageIcon(PlotCanvas.class.getResource("/images/machine/refresh16.png")));
+            super("Refresh", new javax.swing.ImageIcon(PlotCanvas.class.getResource("/images/machine/refresh16.png")));
         }
 
         @Override
@@ -739,7 +746,7 @@ public class PlotCanvas extends JPanel {
 
         public EnlargePlotAreaAction() {
 //            super("Enlarge", new ImageIcon(PlotCanvas.class.getResource("images/resize-larger16.png")));
-            super("Save", new javax.swing.ImageIcon(PlotCanvas.class.getResource("/images/machine/resize-larger16.png")));
+            super("Resize-larger", new javax.swing.ImageIcon(PlotCanvas.class.getResource("/images/machine/resize-larger16.png")));
         }
 
         @Override
@@ -764,7 +771,7 @@ public class PlotCanvas extends JPanel {
 
         public ShrinkPlotAreaAction() {
 //            super("Shrink", new ImageIcon(PlotCanvas.class.getResource("images/resize-smaller16.png")));
-            super("Save", new javax.swing.ImageIcon(PlotCanvas.class.getResource("/images/machine/resize-smaller16.png")));
+            super("Resize-smaller", new javax.swing.ImageIcon(PlotCanvas.class.getResource("/images/machine/resize-smaller16.png")));
         }
 
         @Override
@@ -789,7 +796,7 @@ public class PlotCanvas extends JPanel {
 
         public IncreaseWidthAction() {
 //            super("Increase Width", new ImageIcon(PlotCanvas.class.getResource("images/increase-width16.png")));
-            super("Save", new javax.swing.ImageIcon(PlotCanvas.class.getResource("/images/machine/increase-width16.png")));
+            super("Increase-width", new javax.swing.ImageIcon(PlotCanvas.class.getResource("/images/machine/increase-width16.png")));
         }
 
         @Override
@@ -810,7 +817,7 @@ public class PlotCanvas extends JPanel {
 
         public IncreaseHeightAction() {
 //            super("Increase Height", new ImageIcon(PlotCanvas.class.getResource("images/increase-height16.png")));
-            super("Save", new javax.swing.ImageIcon(PlotCanvas.class.getResource("/images/machine/increase-height16.png")));
+            super("Increase-height", new javax.swing.ImageIcon(PlotCanvas.class.getResource("/images/machine/increase-height16.png")));
         }
 
         @Override
@@ -831,7 +838,7 @@ public class PlotCanvas extends JPanel {
 
         public DecreaseWidthAction() {
 //            super("Decrease Width", new ImageIcon(PlotCanvas.class.getResource("images/decrease-width16.png")));
-            super("Save", new javax.swing.ImageIcon(PlotCanvas.class.getResource("/images/machine/decrease-width16.png")));
+            super("Decrease-width", new javax.swing.ImageIcon(PlotCanvas.class.getResource("/images/machine/decrease-width16.png")));
         }
 
         @Override
@@ -851,11 +858,11 @@ public class PlotCanvas extends JPanel {
         }
     }
     
-    private class DecreaseHeightAction extends AbstractAction {
+    private class DecreaseHeightAction extends AbstractAction{
 
         public DecreaseHeightAction() {
 //            super("Decrease Height", new ImageIcon(PlotCanvas.class.getResource("images/decrease-height16.png")));
-            super("Save", new javax.swing.ImageIcon(PlotCanvas.class.getResource("/images/machine/decrease-height16.png")));
+            super("Decrease-height", new javax.swing.ImageIcon(PlotCanvas.class.getResource("/images/machine/decrease-height16.png")));
         }
 
         @Override
@@ -879,22 +886,29 @@ public class PlotCanvas extends JPanel {
 
         public PropertyAction() {
 //            super("Properties", new ImageIcon(PlotCanvas.class.getResource("images/property16.png")));
-            super("Save", new javax.swing.ImageIcon(PlotCanvas.class.getResource("/images/machine/property16.png")));
+            super("Property", new javax.swing.ImageIcon(PlotCanvas.class.getResource("/images/machine/property16.png")));
         }
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            JDialog dialog = createPropertyDialog();
-            dialog.addWindowListener(new WindowAdapter() {
-
-                @Override
-                public void windowClosing(WindowEvent e) {
-                }
-            });
-
-            dialog.setVisible(true);
-            dialog.dispose();
-            dialog = null;
+            
+            if(dataLegend==null){
+                JOptionPane.showMessageDialog(null, "No properties for this section", "VisMineDR", JOptionPane.INFORMATION_MESSAGE);
+            }else{
+                frameLegend fl = new frameLegend(dataLegend);
+                fl.setVisible(true);
+            }
+//            JDialog dialog = createPropertyDialog();
+//            dialog.addWindowListener(new WindowAdapter() {
+//
+//                @Override
+//                public void windowClosing(WindowEvent e) {
+//                }
+//            });
+//
+//            dialog.setVisible(true);
+//            dialog.dispose();
+//            dialog = null;
         }
     }
     
@@ -1463,6 +1477,11 @@ public class PlotCanvas extends JPanel {
      */
     public void point(char legend, Color color, double... coord) {
         add(new Point(legend, color, coord));
+    }
+    
+    
+    public void setLegend(AbstractTableModel dataLegend) {
+        this.dataLegend = dataLegend;
     }
 
     /**
