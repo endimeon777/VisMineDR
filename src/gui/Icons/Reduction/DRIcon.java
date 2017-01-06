@@ -59,6 +59,7 @@ public class DRIcon extends Icon{
     public ArrayList etiquetasDif = new ArrayList(1);
     
     public Integer d = 2; // MDS y PCA, para seleccionar a que dimension se reduce
+    public boolean ipm = false; // ipm: is proximity matrix, es para saber si la matriz es de priximidad directa o toca calcularla, este parametro lo utiiza MDS
     public boolean cor; //PCA para seleccionar el metodo de scalig, correlacion o covarianza 
     public Integer k = 0; // Para LLE Y LE
     public Integer t = -1; // Para LE
@@ -143,7 +144,7 @@ public class DRIcon extends Icon{
             }
         });
         super.pupMenu.add(mnuView);
-        if(algorithm.equals("KMDS")){
+        if(algorithm.equals("KMDS") || algorithm.equals("PCA")){
             verYK = new verDatosReducidosKernel(); //el view de los metodos kernel tiene mas pestañas que corresponden a los datos kernel
         }else{
             verY = new verDatosReducidos();
@@ -212,15 +213,21 @@ public class DRIcon extends Icon{
 
         if(algorithm.equals("MDS")){
             
-            if(dataIn.length==dataIn[0].length){// para saber si la matriz es cuadrada como debe ser una matriz de afinidad
+//            if(dataIn.length==dataIn[0].length){// para saber si la matriz es cuadrada como debe ser una matriz de afinidad
                 this.startAnimation();
-                long clock = System.currentTimeMillis();  
-                mds = new MDS(dataIn, d);
+                long clock = System.currentTimeMillis(); 
+                
+                // ipm(is proximitiy matrix?)si la matriz es de covariaza directa o si toca calcularla
+                mds = new MDS(ipm, dataIn, d);
+                
+//              CUANDO SE CONTRUYE LA MATRIZ DE PROXIMIDAD CXC(ATRIBUTOS POR ATRIBUTOS), SIMILAR A LA DE EURODIST
+//                etiquetas = atributos; 
+         
                 System.out.format("Learn MDS from %d samples in %dms\n", dataIn.length, System.currentTimeMillis()-clock);
                 this.stopAnimation();
-            } else{
-                JOptionPane.showMessageDialog(this, "Matrix is not square", "VisMineDR", JOptionPane.ERROR_MESSAGE);
-            }  
+//            } else{
+//                JOptionPane.showMessageDialog(this, "Matrix is not square", "VisMineDR", JOptionPane.ERROR_MESSAGE);
+//            }  
             
         }else if(algorithm.equals("PCA")){
             this.startAnimation();
@@ -279,7 +286,6 @@ public class DRIcon extends Icon{
                         gamma += Utils.MachineLearning.math.math.Math.squaredDistance(dataIn[i], dataIn[j]);
                     }
                 }
-
                 gamma = Utils.MachineLearning.math.math.Math.sqrt(gamma / n) / 4;
             } 
             
@@ -335,7 +341,6 @@ public class DRIcon extends Icon{
         }
         });
     }
-
         
     public void llenarDatosTablas(){
           
@@ -348,8 +353,29 @@ public class DRIcon extends Icon{
           }
           DRTableModel dataO = new DRTableModel(dataOut, ds);  
           
-          DRTableModel eigenVectores = new DRTableModel(kmds.getEigValores(), ds);
           DRTableModel eigenValores = new DRTableModel(kmds.getEigVectores(), ds);
+          DRTableModel eigenVectores = new DRTableModel(kmds.getEigValores(), ds);
+
+          verYK.setDatas(dataI, dataO, eigenVectores, eigenValores); 
+          verYK.setVisible(true);
+
+      }else if(algorithm.equals("PCA")){ //El view de los metodos kernel tiene mas pestañas por que se visualizan los eigenvectore y eigenvalores
+          
+          // para llenar la tabla de datos de salida
+          String[] ds = new String[d];
+          for(int i=0; i<d; i++){
+              ds[i] = "d"+(i+1); 
+          }
+          DRTableModel dataO = new DRTableModel(dataOut, ds);  
+          
+          //para llenar las tablas eigen
+          String[] cs = new String[pca.getEigVectores().length];
+          for(int i=0; i<pca.getEigVectores().length; i++){
+              cs[i] = "d"+(i+1); 
+          }
+          
+          DRTableModel eigenVectores = new DRTableModel(pca.getEigVectores(), cs);
+          DRTableModel eigenValores = new DRTableModel(pca.getEigValores(), cs);
 
           verYK.setDatas(dataI, dataO, eigenVectores, eigenValores); 
           verYK.setVisible(true);
@@ -357,7 +383,7 @@ public class DRIcon extends Icon{
       }else{
           String[] ds = new String[d];
           for(int i=0; i<d; i++){
-              ds[i] = "d"+i+1; 
+              ds[i] = "d"+(i+1); 
           }
           DRTableModel dataO = new DRTableModel(dataOut, ds);    
 
