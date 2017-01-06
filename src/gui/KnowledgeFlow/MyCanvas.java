@@ -1078,7 +1078,7 @@ public class MyCanvas extends javax.swing.JPanel implements DropTargetListener {
                             }
                         }else if (from instanceof FileIcon && to instanceof DRIcon) {
                             
-                            if(!((DRIcon)to).getName().equals("MDS")){ // A MDS se le debe pasar una matriz cuadrada de distancias
+//                            if(!((DRIcon)to).getName().equals("MDS")){ // A MDS se le debe pasar una matriz cuadrada de distancias
                                 
                                 // para validar que solo ingresen datos cuantitativos
                                 boolean bdCuanti = true;
@@ -1089,22 +1089,30 @@ public class MyCanvas extends javax.swing.JPanel implements DropTargetListener {
                                 }
 
                                if(bdCuanti){
-                                
+                             
                                     double[][] data = null;
+                                    String[] atributos = null;
                                     if (((FileIcon) from).data == null) {
                                         ChooserEscritorio.setStatus("There are not loaded data in " + from.getIconType() + "...");
-                                    }else {
+                                    }else {   
                                         data = new double[((FileIcon) from).data.getRowCount()][((FileIcon) from).data.getColumnCount()];
-
+                                        
                                         // datos                                                     
                                         for(int i = 0; i < ((FileIcon) from).data.getRowCount(); i++){
                                             for(int j = 0; j < ((FileIcon) from).data.getColumnCount(); j++){
                                                  data[i][j] = Double.parseDouble(((FileIcon)from).data.getValueAt(i, j).toString()) ;              
                                             }   
                                         }
+                                        
+                                        // atributos   
+                                        atributos = new String[((FileIcon) from).data.getColumnCount()];
+                                        for(int j = 0; j < ((FileIcon) from).data.getColumnCount(); j++){      
+                                              atributos[j] = ((FileIcon) from).data.getColumnName(j);
+                                        }
                                     }
                                     
-                                    ((DRIcon)to).dataIn = data;                                   
+                                    ((DRIcon)to).dataIn = data;   
+                                    ((DRIcon) to).atributos = atributos;
                                     
                                     if(((DRIcon)to).getName().equals("KMDS")){ //KMDS no se configura, se ejecuta directamente
                                         ((DRIcon) to).getMnuRun().setEnabled(true);
@@ -1121,9 +1129,9 @@ public class MyCanvas extends javax.swing.JPanel implements DropTargetListener {
                                     JOptionPane.showMessageDialog(this, "Only quantitative attributes are allowed", "VisMineDR", JOptionPane.ERROR_MESSAGE);
                                 }
                                  
-                            }else{
-                                    JOptionPane.showMessageDialog(this, "You can not connect directly, use the filter selection", "VisMineDR", JOptionPane.ERROR_MESSAGE);
-                            }
+//                            }else{
+//                                    JOptionPane.showMessageDialog(this, "You can not connect directly, use the filter selection", "VisMineDR", JOptionPane.ERROR_MESSAGE);
+//                            }
                                 
                         }else if (from instanceof FileIcon && to instanceof ScatterIcon) {
                             
@@ -1168,7 +1176,7 @@ public class MyCanvas extends javax.swing.JPanel implements DropTargetListener {
                            }else{
                              JOptionPane.showMessageDialog(this, "Only quantitative attributes are allowed", "VisMineDR", JOptionPane.ERROR_MESSAGE);
                            }
-     
+    
                         }else if (from instanceof FilterIcon && to instanceof DRIcon) {
 
                           if(((FilterIcon)from).filterName.equals("selection")){
@@ -1413,8 +1421,9 @@ public class MyCanvas extends javax.swing.JPanel implements DropTargetListener {
 
                             if(((ScatterIcon) to).etiquetas == null && ((DRIcon)from).algorithm.equals("KPCA")){ 
                                 ((ScatterIcon) to).getMnuRun().setEnabled(true);
-                            }else if(((DRIcon)from).algorithm.equals("MDS")){ 
-                                ((ScatterIcon) to).getMnuRun().setEnabled(true);
+//                            }
+//                            else if(((DRIcon)from).algorithm.equals("MDS")){ 
+//                                ((ScatterIcon) to).getMnuConfigure().setEnabled(true);
                             }else{
                                 ((ScatterIcon) to).getMnuConfigure().setVisible(true);
                                 ((ScatterIcon) to).getMnuConfigure().setEnabled(true); 
