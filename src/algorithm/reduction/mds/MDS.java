@@ -89,11 +89,22 @@ public class MDS {
      * @param k the dimension of the projection.
      */
     public MDS(double[][] proximity, int k) {
-        this(proximity, k, false);
+        this(false, proximity, k, false);
+    }
+    
+    /**
+     *
+     * @param codV es true si la matriz de covarianza la suministran directamente o false si hay que calcularla
+     * @param proximity
+     * @param k
+     */
+    public MDS(boolean codV, double[][] proximity, int k) {
+        this(codV, proximity, k, false);
     }
 
     /**
      * Constructor. Learn the classical multidimensional scaling.
+     * @param proxD: si la matriz de proximidad viene dada directa o se la debe contruir
      * @param proximity the nonnegative proximity matrix of dissimilarities. The
      * diagonal should be zero and all other elements should be positive and
      * symmetric. For pairwise distances matrix, it should be just the plain
@@ -110,18 +121,62 @@ public class MDS {
      * to minimize the dimensionality of the Euclidean space required for
      * representing the objects.
      */
-    public MDS(double[][] proximity, int k, boolean add) {
+    public MDS(boolean proxD, double[][] proximity, int k, boolean add) {
+        
         int m = proximity.length;
         int n = proximity[0].length;
-
-        if (m != n) {
-            throw new IllegalArgumentException("The proximity matrix is not square.");
-        }
 
         if (k < 1 || k >= n) {
             throw new IllegalArgumentException("Invalid k = " + k);
         }
+        
+        if(!proxD){// si la matri de proximidad no viene dada directamente, es decir se debe calcular
+            
+//            CUANDO SE CONTRUYE LA MATRIZ DE PROXIMIDAD CXC(ATRIBUTOS POR ATRIBUTOS), SIMILAR A LA DE EURODIST
+//            //// para calcular la matriz de proxmidad
+//            proximity = Math.transpose(proximity);
+//            double[][] pro = new double[n][n];
+//            
+//            for (int i = 0; i < n; i++) { 
+//                for (int j = i; j < n; j++) { 
+//                    if(i==j){
+//                        pro[i][j] = 0.0;
+//                    }else{
+//                        pro[i][j] = Math.distance(proximity[i], proximity[j]);
+//                        pro[j][i] = pro[i][j];
+//                    }
+//                }
+//            }  
+//            ///////
+            
 
+//          CUANDO SE CONTRUYE LA MATRIZ DE PROXIMIDAD FXF(REGISTRO POR REGISTRO)
+            //// para calcular la matriz de proxmidad
+//            proximity = Math.transpose(proximity);
+            double[][] pro = new double[m][m];
+            
+            for (int i = 0; i < m; i++) { 
+                for (int j = i; j < m; j++) { 
+                    if(i==j){
+                        pro[i][j] = 0.0;
+                    }else{
+                        pro[i][j] = Math.distance(proximity[i], proximity[j]);
+                        pro[j][i] = pro[i][j];
+                    }
+                }
+            }  
+            ///////
+            
+            proximity = pro;
+            m = proximity.length;
+            n = proximity[0].length;
+            
+        }else{
+            if (m != n) {
+               throw new IllegalArgumentException("The proximity matrix is not square.");
+            }
+        }
+        
         double[][] A = new double[n][n];
         double[][] B = new double[n][n];
 
@@ -176,14 +231,15 @@ public class MDS {
 
         EigenValueDecomposition eigen = Math.eigen(B, k);
         
-        coordinates = new double[n][k];
+//        aqui cambie lo de cxc o fxf   cambie la n por m
+        coordinates = new double[m][k];
         for (int j = 0; j < k; j++) {
             if (eigen.getEigenValues()[j] < 0) {
                 throw new IllegalArgumentException(String.format("Some of the first %d eigenvalues are < 0.", k));
             }
 
             double scale = Math.sqrt(eigen.getEigenValues()[j]);
-            for (int i = 0; i < n; i++) {
+            for (int i = 0; i < m; i++) {
                 coordinates[i][j] = eigen.getEigenVectors()[i][j] * scale;
             }
         }
@@ -192,4 +248,5 @@ public class MDS {
         proportion = eigenvalues.clone();
         Math.unitize1(proportion);
     }
+       
 }
