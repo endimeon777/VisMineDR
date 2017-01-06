@@ -65,7 +65,8 @@ public class ScatterIcon extends Icon{
     public ArrayList etiquetasDif = new ArrayList(1);
     
     public Integer d = 2;
-    public String selPoint = "Nominal";
+    public String selLabel = "Nominal";
+    public char  pointLegend = '*';
     public boolean viewGraph = false;
     
     public static configureVisPCA cVisPca;
@@ -160,7 +161,7 @@ public class ScatterIcon extends Icon{
                     cVisLle.updateIcon(icon);
                     cVisLle.setVisible(true);
                     
-                } else if(algorithm.equals("KPCA") || algorithm.equals("conEtiquetas")){ 
+                } else if(algorithm.equals("KPCA") || algorithm.equals("conEtiquetas") || algorithm.equals("MDS")){ 
                     cVisKpca.updateIcon(icon);
                     cVisKpca.setVisible(true);
                 }
@@ -203,7 +204,16 @@ public class ScatterIcon extends Icon{
             
         }else if(algorithm.equals("MDS")){
             y = mds.getCoordinates();
-            plot = ScatterPlot.plot(y, atributos);
+            plot = ScatterPlot.plot(y, etiquetas); // HAY QUE CAMBIAR ETIQUETAS POR ATRIBUTOS SI SE DESEA OBTENER LA MATRIZ CXC
+            
+//            CUANDO SE CONTRUYE LA MATRIZ DE PROXIMIDAD CXC(ATRIBUTOS POR ATRIBUTOS), SIMILAR A LA DE EURODIST
+//            etiquetasDif.clear();
+//           
+//            // como en MDS los atributos se convierten en etiquetas se debe hacer la nueva asignación
+//            for(int i=0; i<atributos.length; i++){
+//               etiquetasDif.add(atributos[i]); 
+//            }
+            
             mensaje = ("MDS (d = "+d+")");
             title = "Classical Multi-Dimensional Scaling";
         
@@ -218,14 +228,14 @@ public class ScatterIcon extends Icon{
              graph = lle.getNearestNeighborGraph();
              mensaje = ("LLE (d = "+d+")");
              title = "Locally Linear Embedding";
-             etiquetas=null;
+//             etiquetas=null;
                     
         }else if(algorithm.equals("LE")){
              y = le.getCoordinates();
              graph = le.getNearestNeighborGraph();
              mensaje = ("LE (d = "+d+")");
              title = "Laplacian Eigenmap";
-             etiquetas=null; // para que lo grafique en blnco y negro, revisar... si se quire visualizar en color igual en lle
+//             etiquetas=null; // para que lo grafique en blnco y negro, revisar... si se quire visualizar en color igual en lle
             
         }else if(algorithm.equals("KPCA")){
             y = kpca.getCoordinates();
@@ -237,34 +247,43 @@ public class ScatterIcon extends Icon{
         
         plot = new PlotCanvas(Utils.MachineLearning.math.math.Math.colMin(y), Utils.MachineLearning.math.math.Math.colMax(y));
         
-        char pointLegend;
-        if (dataIn.length < 2000) {
-                pointLegend = '*';
-        } else {
-                pointLegend = '.';
-        }
-        
         if(etiquetas==null){
             plot.points(y, pointLegend); 
         }else{
-            // para codificar las etiquetas y ponerles colores
-            int[] codEtiquetas = new int[etiquetas.length];
-            for(int i = 0; i < etiquetas.length; i++) {
-                codEtiquetas[i] = etiquetasDif.indexOf(etiquetas[i]);
-            }
-
-            if(selPoint=="Nominal"){
+            if(selLabel=="Nominal"){
                 // forma 1: con los nombres de las etiquetas
                 plot.points(y, etiquetas);
-            }else if(selPoint=="Colour"){              
+            }else if(selLabel=="Colour"){              
                 // forma 2: con codigo de colores y puntos
-                for (int i = 0; i < y.length; i++) {
-                    plot.point(pointLegend, Palette.COLORS[codEtiquetas[i]], y[i]);
+                
+                if(etiquetasDif.size()<40){ 
+                    // para codificar las etiquetas y ponerles colores
+                    int[] codEtiquetas = new int[etiquetas.length];
+                    for(int i = 0; i < etiquetas.length; i++) {
+                        codEtiquetas[i] = etiquetasDif.indexOf(etiquetas[i]);
+                    }
+                    
+                    // pone en la cordenada y[i] un punto(determinado por pointLegend) con un color depediendo del codigo de etiqueta asignado
+                    for (int i = 0; i < y.length; i++) {
+                        plot.point(pointLegend, Palette.COLORS[codEtiquetas[i]], y[i]);
+                   }
+
+                    //se crea una talba con el codigo del color y su respectiva etiqueta
+                    Object [][]data = new Object[etiquetasDif.size()][2];
+                    for(int i=0; i<etiquetasDif.size(); i++){
+                        data[i][0] = i;
+                        data[i][1] = etiquetasDif.get(i);
+                    }
+                    dataLegend dataLegend = new dataLegend(data);
+                    plot.setLegend(dataLegend);                   
+                     
+                }else{
+                    JOptionPane.showMessageDialog(this, "The number of labels is greater than the color palette", "VisMineDR", JOptionPane.ERROR_MESSAGE);
                 }
-            }else if(selPoint=="Black"){
+            }else if(selLabel=="Black"){
                 // forma 3: en blanco y negro
                 plot.points(y, pointLegend); 
-            }else if(selPoint=="RGB"){ // la definicion de colores RGB tiene que ser explicita en la tabla de datos
+            }else if(selLabel=="RGB"){ // la definicion de colores RGB tiene que ser explicita en la tabla de datos
                 // forma 3: en blanco y negro
                for (int i = 0; i < y.length; i++) { 
                     
@@ -292,7 +311,7 @@ public class ScatterIcon extends Icon{
         
          //para dibujar los grafos en el caso de le y lle
          if(viewGraph){
-             plot.points(y, 'o', Color.RED);
+             plot.points(y, pointLegend, Color.RED);
              int n = y.length;
 
              for (int i = 0; i < n; i++) {
@@ -305,6 +324,7 @@ public class ScatterIcon extends Icon{
          }
         
         plot.setTitle(mensaje);
+        putAxisLabels(algorithm, plot);
         pane.add(plot); 
         this.stopAnimation();
         mnuView.setEnabled(true);
@@ -338,6 +358,16 @@ public class ScatterIcon extends Icon{
         });
     }
     
-
+   private void putAxisLabels(String algorithm, PlotCanvas plot){
+       if(algorithm.equals("sinEtiquetas") || algorithm.equals("conEtiquetas")){ 
+           for(int i = 0; i < atributos.length; i++) {
+              plot.setAxisLabel(i, plot.getAxisLabel(i)+" :" + atributos[i]);
+           }
+       }else{ // caso contrario es si los datos son generados por métodos 
+           for(int i=0; i<d; i++){
+               plot.setAxisLabel(i, plot.getAxisLabel(i)+" :" + "d"+(i+1));
+           }
+       }
+   }
     
 }
